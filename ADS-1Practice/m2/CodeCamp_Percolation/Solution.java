@@ -11,13 +11,13 @@ class percolation {
 		size = size;
 	}
 	void open(int row, int col) {
-		grid[row-1][col - 1] = 1;
+		grid[row][col] = 1;
 		cnt++;
 		if(row==0) {
-			cd.union(0, component(row-1, col-1));
+			cd.union(0, component(row, col));
 		}
 		if (row == size -1) {
-			cd.union((size*size) +1 , component(row-1, col-1));
+			cd.union((size*size) +1 , component(row, col));
 		}
 		if(row+1 <size && grid[row][col] == 1) {
 				cd.union(component(row + 1, col) , component(row, col));
