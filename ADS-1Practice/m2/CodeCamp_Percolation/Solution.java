@@ -19,16 +19,27 @@ class per {
 		if (row == size -1) {
 			cd.union((size*size) +1 , component(row-1, col-1));
 		}
-		if (row>0 && row <= size - 1) {
+		if (row>0 ) {
 			if(grid[row][col] == 1) {
 				cd.union(component(row - 1, col) , component(row, col));
 			}
 		}
-		if (col>0 && row <= size - 1) {
-			if(grid[row-1][col+1] == 1) {
-				cd.union(component(row - 1, col) , component(row, col));
+		if (row <= size - 1) {
+			if(grid[row-2][col] == 1) {
+				cd.union(component(row - 1, col) , component(row-2, col));
+			}
+		}
+		
+		if (col>0) {
+			if(grid[row+1][col+2] == 1) {
+				cd.union(component(row - 1, col-1) , component(row-1, col));
 			}
 		}	
+		if (row <= size - 1) {
+			if(grid[row+1][col-2] == 1) {
+				cd.union(component(row - 1, col-1) , component(row-1, col-2));
+			}
+		}
 	}
 	int component(int i, int j) {
 		return (i*size+ j)+1;
