@@ -30,7 +30,7 @@ class per {
 			}
 		}
 		if (col>0) {
-			if(grid[row+1][col+2] == 1) {
+			if(grid[row-1][col+2] == 1) {
 				cd.union(component(row - 1, col-1) , component(row-1, col));
 			}
 		}	
