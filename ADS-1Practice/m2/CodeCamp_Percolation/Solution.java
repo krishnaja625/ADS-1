@@ -29,7 +29,6 @@ class per {
 				cd.union(component(row - 1, col-1) , component(row-2, col-1));
 			}
 		}
-		
 		if (col>0) {
 			if(grid[row+1][col+2] == 1) {
 				cd.union(component(row - 1, col-1) , component(row-1, col));
@@ -44,7 +43,7 @@ class per {
 	int component(int i, int j) {
 		return (i*size+ j)+1;
 	}
-	boolean isopen(int row, int col) {
+	boolean isOpen(int row, int col) {
 		return grid[row-1][col - 1] == 1;
 	}
 	boolean isFull(int row, int col) {
