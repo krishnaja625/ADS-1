@@ -26,7 +26,7 @@ class per {
 		}
 		if (row <= size - 1) {
 			if(grid[row-2][col] == 1) {
-				cd.union(component(row - 1, col) , component(row-2, col));
+				cd.union(component(row - 1, col-1) , component(row-2, col-1));
 			}
 		}
 		
