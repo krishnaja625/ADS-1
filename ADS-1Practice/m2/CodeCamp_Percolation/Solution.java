@@ -50,11 +50,11 @@ class Percolation {
                 cd.union(
                     component(row + 1, col), component(row, col));
             }
-        if (row - 1 > 0 && grid[row - 1][col] == 1) {
+        if (row - 1 >= 0 && grid[row - 1][col] == 1) {
                 cd.union(
                     component(row - 1, col), component(row, col));
         }
-        if (col - 1 > 0 && grid[row][col - 1] == 1) {
+        if (col - 1 >= 0 && grid[row][col - 1] == 1) {
                 cd.union(component(row, col - 1), component(row, col));
         }
         if (col + 1 < size && grid[row][col + 1] == 1) {
