@@ -25,11 +25,11 @@ class percolation {
  *
  * @param      size  The size
  */
-	percolation(int size) {
+	percolation(final int size) {
 		grid = new int[size][size];
 		cnt = 0;
-		cd = new Weightedunion((size*size) +2);
-		size = size;
+		cd = new Weightedunion((size * size) + 2);
+		this.size = size;
 	}
 	/**
 	 * function to check whether the element has to be connected or not.
@@ -37,26 +37,26 @@ class percolation {
 	 * @param      row   The value of row
 	 * @param      col   The value of column
 	 */
-	void open(int row, int col) {
+	void open(final int row, final int col) {
 		grid[row][col] = 1;
 		cnt++;
-		if(row==0) {
+		if(row == 0) {
 			cd.union(0, component(row, col));
 		}
-		if (row == size -1) {
-			cd.union((size*size) +1 , component(row, col));
+		if (row == size - 1) {
+			cd.union((size*size) + 1 , component(row, col));
 		}
-		if(row+1 <size && grid[row][col] == 1) {
+		if(row + 1 < size && grid[row][col] == 1) {
 				cd.union(component(row + 1, col) , component(row, col));
 			}
-		if (row-1 >0 && grid[row-1][col] == 1) {
+		if (row - 1 > 0 && grid[row - 1][col] == 1) {
 				cd.union(component(row - 1, col) , component(row, col));
 		}
-		if (col-1 >0 && grid[row][col-1] == 1) {
-				cd.union(component(row, col-1) , component(row, col));
+		if (col - 1 > 0 && grid[row][col - 1] == 1) {
+				cd.union(component(row, col - 1) , component(row, col));
 		}	
-		if (col+1 <size && grid[row][col+1] == 1) {
-				cd.union(component(row, col+1) , component(row, col));
+		if (col + 1 < size && grid[row][col + 1] == 1) {
+				cd.union(component(row, col + 1) , component(row, col));
 		}
 	}
 	/**
@@ -67,8 +67,8 @@ class percolation {
 	 *
 	 * @return     return type is int
 	 */
-	int component(int i, int j) {
-		return (i)*size + j ;
+	int component(final int i, final int j) {
+		return (i) * size + j ;
 	}
 	/**
 	 * Determines if open.
@@ -78,7 +78,7 @@ class percolation {
 	 *
 	 * @return     True if open, False otherwise.
 	 */
-	boolean isOpen(int row, int col) {
+	boolean isOpen(final int row, final int col) {
 		return grid[row][col] == 1;
 	}
 	/**
@@ -89,7 +89,7 @@ class percolation {
 	 *
 	 * @return     True if full, False otherwise.
 	 */
-	boolean isFull(int row, int col) {
+	boolean isFull(final int row, final int col) {
 		return grid[row][col] == 0;
 	}
 	/**
@@ -106,7 +106,7 @@ class percolation {
 	 * @return     True if percolates, False otherwise.
 	 */
 	boolean percolates() {
-		return cd.connected(0, (size*size) +1);
+		return cd.connected(0, (size*size) + 1);
 	}
 }
 /**
@@ -114,17 +114,23 @@ class percolation {
  */
 class Solution {
 	/**
-	 * function of main
+	 * Constructs the object.
+	 */
+	Solution() {
+
+	}
+	/**
+	 * function of main.
 	 *
 	 * @param      args  The arguments
 	 */
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		Scanner s = new Scanner(System.in);
 		int n = s.nextInt();
 		percolation wc = new percolation(n);
-		while(s.hasNext()){
-		wc.open(s.nextInt() - 1, s.nextInt() - 1);	
-		}	
+		while (s.hasNext()) {
+		wc.open(s.nextInt() - 1, s.nextInt() - 1);
+		}
 		System.out.println(wc.percolates());
 }
 }
