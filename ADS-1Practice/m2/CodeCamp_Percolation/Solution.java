@@ -23,7 +23,7 @@ class Percolation {
 /**
  * Constructs the object.
  *
- * @param      size  The size
+ * @param      n  The size
  */
     Percolation(final int n) {
         grid = new int[n][n];
