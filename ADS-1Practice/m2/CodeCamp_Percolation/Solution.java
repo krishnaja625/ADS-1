@@ -41,7 +41,7 @@ class per {
 		}
 	}
 	int component(int i, int j) {
-		return (i*size+ j)+1;
+		return (i-1)*size + j;
 	}
 	boolean isOpen(int row, int col) {
 		return grid[row-1][col - 1] == 1;
