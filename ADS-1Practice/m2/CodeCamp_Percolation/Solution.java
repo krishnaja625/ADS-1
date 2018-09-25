@@ -25,11 +25,11 @@ class Percolation {
  *
  * @param      size  The size
  */
-    Percolation(final int size) {
-        grid = new int[size][size];
+    Percolation(final int n) {
+        grid = new int[n][n];
         cnt = 0;
-        cd = new Weightedunion((size * size) + 2);
-        this.size = size;
+        cd = new Weightedunion((n * n) + 2);
+        this.size = n;
     }
     /**
      * function to check whether the element has to be connected or not.
@@ -119,7 +119,7 @@ class Solution {
     /**
      * Constructs the object.
      */
-    Solution() {
+    protected Solution() {
 
     }
     /**
