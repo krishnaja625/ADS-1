@@ -44,7 +44,7 @@ class Percolation {
             cd.union(col, component(row, col));
         }
         if (row == size - 1) {
-            cd.union((size * size) + 1, component(row, col));
+            cd.union((size * size) + col, component(row, col));
         }
         if (row + 1 < size && grid[row][col] == 1) {
                 cd.union(
