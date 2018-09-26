@@ -49,7 +49,7 @@ class Solution {
      * @param x for search element
      * @return return type is integer.
      */
-    static int binarySearch(final int arr[], final
+    static int binarySearch(final int[] arr, final
         int startIndex, final int endIndex, final int x) {
         if (endIndex >= startIndex) {
             int mid = startIndex + (endIndex - startIndex) / 2;
