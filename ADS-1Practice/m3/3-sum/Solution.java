@@ -17,7 +17,7 @@ Arrays.sort(arr);
     for (int j = i+1; j < arr.length; j++) {
       int a = -1 * (arr[i] + arr[j]);
       int z = binarySearch(arr, j+1, arr.length-1, a);
-      if (z >= j) {
+      if (z > j) {
         cnt++;  
     }
     }
