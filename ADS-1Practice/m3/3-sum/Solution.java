@@ -39,15 +39,15 @@ class Solution{
     }
     System.out.println(cnt);
     }
-    static int binarySearch(final int arr[], final int startIndex, final int endIndex, final int x) { 
+    static int binarySearch(final int arr[], final int startIndex, final int endIndex, final int x) {
         if (endIndex >= startIndex) {
             int mid = startIndex + (endIndex - startIndex) / 2;
-                if (arr[mid] == x)   
+                if (arr[mid] == x)
                     return arr[mid];
-                if (arr[mid] > x)  
-                    return binarySearch(arr, startIndex, mid-1, x);  
-                return binarySearch(arr, mid+1, endIndex, x); 
-        } 
-        return -1; 
+                if (arr[mid] > x)
+                    return binarySearch(arr, startIndex, mid - 1, x);
+                return binarySearch(arr, mid + 1, endIndex, x);
+        }
+        return -1;
     }
 }
