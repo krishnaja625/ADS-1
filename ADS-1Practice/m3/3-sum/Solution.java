@@ -22,7 +22,7 @@ Arrays.sort(arr);
       int z = binarySearch(arr, 0, arr.length-1, a);
 /*      System.out.println((arr[i] + arr[j]) + " " +a);
     System.out.println( binarySearch(arr, 0, arr.length-1, a));*/ ;
-      if (z > j) {
+      if (z > j && a < 0) {
         cnt++;  
     }
     }
@@ -44,4 +44,3 @@ static int binarySearch(int arr[], int startIndex, int endIndex, int x)
   return -1; 
 }
 }
-
