@@ -19,7 +19,7 @@ Arrays.sort(arr);
   for(int i = 0; i < arr.length; i++) {
     for (int j = i+1; j < arr.length; j++) {
       int a = -1 * (arr[i] + arr[j]);
-      int z = Arrays.binarySearch(arr, 0, arr.length, a);
+      int z = binarySearch(arr, 0, arr.length, a);
 /*      System.out.println((arr[i] + arr[j]) + " " +a);
     System.out.println( binarySearch(arr, 0, arr.length-1, a));*/ ;
       if (z > j) {
@@ -30,7 +30,7 @@ Arrays.sort(arr);
 }
 System.out.println(cnt);
 }
-/*static int binarySearch(int arr[], int startIndex, int endIndex, int x) 
+static int binarySearch(int arr[], int startIndex, int endIndex, int x) 
 { 
    if (endIndex >= startIndex) 
    {
@@ -42,6 +42,6 @@ System.out.println(cnt);
         return binarySearch(arr, mid+1, endIndex, x); 
    } 
   return -1; 
-}*/
+}
 }
 
