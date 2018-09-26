@@ -9,11 +9,13 @@ import java.util.Arrays;
 /**
  * Class for solution.
  */
-class Solution{
+class Solution {
   /**
    * Constructs the object.
    */
-    protected Solution() {}
+    protected Solution() {
+
+    }
 /**
  * Function for main.
  *
@@ -22,7 +24,7 @@ class Solution{
     public static void main(final String[] args) {
     Scanner s = new Scanner(System.in);
     int size = s.nextInt();
-    int arr[] = new int[size];
+    int[] arr = new int[size];
     for (int i = 0; i < arr.length; i++) {
         arr[i] = s.nextInt();
     }
@@ -30,7 +32,7 @@ class Solution{
     Arrays.sort(arr);
     for (int i = 0; i < arr.length; i++) {
         for (int j = i + 1; j < arr.length; j++) {
-            int a = - 1 * (arr[i] + arr[j]);
+            int a = -1 * (arr[i] + arr[j]);
             int z = binarySearch(arr, j + 1, arr.length - 1, a);
             if (z != -1) {
               cnt++;
@@ -45,9 +47,10 @@ class Solution{
      * @param startIndex for startIndex
      * @param endIndex for endIndex
      * @param x for search element
+     * @return return type is integer.
      */
-    static int binarySearch(final int arr[],
-     final int startIndex, final int endIndex, final int x) {
+    static int binarySearch(final int arr[], final
+        int startIndex, final int endIndex, final int x) {
         if (endIndex >= startIndex) {
             int mid = startIndex + (endIndex - startIndex) / 2;
                 if (arr[mid] == x) {
