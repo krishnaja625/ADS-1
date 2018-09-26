@@ -26,7 +26,7 @@ class Solution{
 	for(int i= 0; i<arr.length; i++) {
 		arr[i] = s.nextInt();
 	}
-	/*Arrays.sort(arr);
+	Arrays.sort(arr);
 	int count = 0;
 	int sum = 0;
 		for (int i = 0 ; i < arr.length - 1; i++) {
@@ -44,6 +44,6 @@ class Solution{
 				count = 1;
 			}
 		}
-	 System.out.println(sum);*/
+	 System.out.println(sum);
 	}
 	}
