@@ -13,7 +13,7 @@ for(int i= 0; i<arr.length; i++) {
 }
 int cnt =0;
 Arrays.sort(arr);
-  for(int i = 0; i < arr.length && arr[i] <0; i++) {
+  for(int i = 0; i < arr.length && arr[i] <=0; i++) {
     for (int j = i+1; j < arr.length && arr[i] + arr[j] <0; j++) {
       int a = -1 * (arr[i] + arr[j]);
       int z = binarySearch(arr, j+1, arr.length-1, a);
@@ -21,7 +21,6 @@ Arrays.sort(arr);
         cnt++;  
     }
     }
-/*  System.out.println("element is present" + a);*/
 }
 System.out.println(cnt);
 }
