@@ -33,7 +33,7 @@ class Solution{
             int a = - 1 * (arr[i] + arr[j]);
             int z = binarySearch(arr, j + 1, arr.length - 1, a);
             if (z != -1) {
-              cnt++;  
+              cnt++;
             }
         }
     }
@@ -41,6 +41,10 @@ class Solution{
     }
     /**
      * Function to do binary search.
+     * @param arr for array
+     * @param startIndex for startIndex
+     * @param endIndex for endIndex
+     * @param x for search element
      */
     static int binarySearch(final int arr[],
      final int startIndex, final int endIndex, final int x) {
