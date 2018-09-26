@@ -16,13 +16,13 @@ Arrays.sort(arr);
 /*if (z == -1) {
   System.out.println("element not present in the array");
 } else {*/
-  for(int i = 0; i < arr.length; i++) {
-    for (int j = i+1; j < arr.length; j++) {
+  for(int i = 0; i < arr.length && arr[i] <0; i++) {
+    for (int j = i+1; j < arr.length && arr[i] + arr[j] <0; j++) {
       int a = -1 * (arr[i] + arr[j]);
       int z = binarySearch(arr, 0, arr.length-1, a);
 /*      System.out.println((arr[i] + arr[j]) + " " +a);
     System.out.println( binarySearch(arr, 0, arr.length-1, a));*/ ;
-      if (z > j && a < 0) {
+      if (z > j) {
         cnt++;  
     }
     }
