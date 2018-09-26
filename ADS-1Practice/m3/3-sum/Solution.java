@@ -26,12 +26,12 @@ class Solution{
     for (int i = 0; i < arr.length; i++) {
         arr[i] = s.nextInt();
     }
-    int cnt =0;
+    int cnt = 0;
     Arrays.sort(arr);
     for (int i = 0; i < arr.length; i++) {
         for (int j = i + 1; j < arr.length; j++) {
-            int a = -1 * (arr[i] + arr[j]);
-            int z = binarySearch(arr, j+1, arr.length-1, a);
+            int a = - 1 * (arr[i] + arr[j]);
+            int z = binarySearch(arr, j + 1, arr.length - 1, a);
             if (z != -1) {
               cnt++;  
             }
@@ -39,13 +39,19 @@ class Solution{
     }
     System.out.println(cnt);
     }
-    static int binarySearch(final int arr[], final int startIndex, final int endIndex, final int x) {
+    /**
+     * Function to do binary search.
+     */
+    static int binarySearch(final int arr[],
+     final int startIndex, final int endIndex, final int x) {
         if (endIndex >= startIndex) {
             int mid = startIndex + (endIndex - startIndex) / 2;
-                if (arr[mid] == x)
+                if (arr[mid] == x) {
                     return arr[mid];
-                if (arr[mid] > x)
+                }
+                if (arr[mid] > x) {
                     return binarySearch(arr, startIndex, mid - 1, x);
+                }
                 return binarySearch(arr, mid + 1, endIndex, x);
         }
         return -1;
