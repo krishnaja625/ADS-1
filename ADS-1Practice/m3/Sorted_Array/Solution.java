@@ -29,12 +29,12 @@ class Solution {
         String[] arr2 = input.nextLine().split(",");
         int[] array1;
         int[] array2;
-        array2 = new int[arr2.length];
-            array1 = new int[size1];
-            for (int i = 0; i < size1; i++) {
-            array1[i] = Integer.parseInt(arr1[i]);
+        array2 = new int[size2];
+        array1 = new int[size1];
+        for (int i = 0; i < size1; i++) {
+        array1[i] = Integer.parseInt(arr1[i]);
         }
-        for (int i = 0; i < arr2.length; i++) {
+        for (int i = 0; i < size2; i++) {
             array2[i] = Integer.parseInt(arr2[i]);
         }
         sortedArray(array1, array2);
