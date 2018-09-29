@@ -201,8 +201,8 @@ class AddLargeNumbers {
         LinkedList list1, final LinkedList list2) {
         LinkedList finalList = new LinkedList();
         LinkedList slist = new LinkedList();
-        Node elemnt1 = list1.last;
-        Node elemnt2 = list2.last;
+        Node elemnt1 = list1.first;
+        Node elemnt2 = list2.first;
         Node elemnt3 = finalList.first;
         int m = 0;
         if (list1.size() > list2.size()) {
@@ -289,10 +289,7 @@ String ss = sum + "";
              carry = (value2 + carry) / 10;
              String ss = sum + "";
              s3.push(ss);
-         }
-         
-          
-          
+         }   
          if (carry > 0)
          {
             String sc = carry + "";
