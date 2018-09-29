@@ -126,7 +126,8 @@ class AddLargeNumbers {
 		int sum = 0;
 /*		Stack s3 = new Stack();
 		Stack s4 = new Stack();*/
-			for (int i = 0; i < list1.size; i++) {
+		int n = list1.size;
+			for (int i = 0; i < n; i++) {
 				elemnt1 = list1.last;
 				elemnt2 = list2.last;
 				if (!s1.isEmpty()) {
@@ -173,10 +174,12 @@ finalList.insert(s11);
 			for(int i = 0; i < n1; i++) {
 				if (!s4.isEmpty()) {
 					sum = Integer.parseInt(s1.pop())
-					 + Integer.parseInt(s2.pop()) + Integer.parseInt(s4.pop());
+					 + Integer.parseInt(s2.pop())
+					 + Integer.parseInt(s4.pop());
 				}
 				else {
-				sum = Integer.parseInt(s1.pop()) + Integer.parseInt(s2.pop());
+				sum = Integer.parseInt(s1.pop())
+				+ Integer.parseInt(s2.pop());
 				}
 				num = sum + "";
 				if (num.length() == 1) {
