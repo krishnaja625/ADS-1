@@ -248,6 +248,7 @@ class AddLargeNumbers {
         Stack s1 = new Stack();
         Stack s2 = new Stack();
         Stack s3 = new Stack();
+        Stack res = new Stack();
             for(int i = 0; i < list1.size(); i++) {
                 s1.push(elemnt1.data);
                 elemnt1 = elemnt1.next;
@@ -258,46 +259,35 @@ class AddLargeNumbers {
             }
             String num = "";
             
-        int sum = 0, carry = 0, value1, value2;
+        int sum = 0, carry = 0, value1, value2,v4=0;
          while ((!s1.isEmpty()) && (!s2.isEmpty()))
          {
+            if(!s3.isEmpty())
+            {
+                v4 = Integer.parseInt(s3.pop());
+            }
              value1 = Integer.parseInt(s1.pop());
              value2 = Integer.parseInt(s2.pop());
              
-             sum   = (value1 + value2 + carry) % 10;
+             sum   = (value1 + value2 + v4) % 10;
              carry = (value1 + value2 + carry) / 10;
-            
-String ss = sum + "";
-             s3.push(ss);
-         }
-         while (!s1.isEmpty())
-         {
-             value1 = Integer.parseInt(s1.pop());
-             
-             sum   = (value1 + carry) % 10;
-             carry = (value1 + carry) / 10;
-             
-           String ss = sum + "";
-             s3.push(ss);
-         }
-         
-         while (!s2.isEmpty())
-         {
-             value2 = Integer.parseInt(s2.pop());
-             
-             sum   = (value2 + carry) % 10;
-             carry = (value2 + carry) / 10;
-             String ss = sum + "";
-             s3.push(ss);
-         }   
-         if (carry > 0)
+             res.push(sum+"");
+            if (carry > 0)
          {
             String sc = carry + "";
              s3.push(sc);
          }
-         while (!s3.isEmpty()) {
-            finalList.insertFirst(s3.pop());
+       
+         } 
+           if(!s3.isEmpty())
+         {
+            res.push(s3.pop());
+         }  
+         
+         while (!res.isEmpty()) {
+            finalList.insertFirst(res.pop());
          }
+
             return finalList;
     }
 }
