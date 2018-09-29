@@ -1,23 +1,48 @@
+/**
+ * { item_description }
+ */
 import java.util.Scanner;
+/**
+ * Class for node.
+ */
 class Node{
 	String data;
 	Node next;
+	/**
+	 * Constructs the object.
+	 */
 	Node(){
 
 	}
-	Node(String data){
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      data  The data
+	 */
+	Node(final String data){
 		this.data = data;
 	}
 }
+/**
+ * List of linkeds.
+ */
 class LinkedList{
 	Node first;
 	Node last;
 	int size;
+	/**
+	 * Constructs the object.
+	 */
 	LinkedList(){
 		first = new Node();
 		last = new Node();
 		size = 0;
 	}
+	/**
+	 * { function_description }
+	 *
+	 * @param      item  The item
+	 */
 	void insert(String item){
 		Node obj = new Node(item);
 		if(size==0){
@@ -30,6 +55,11 @@ class LinkedList{
 		last = obj;
 		size++;
 	}
+	/**
+	 * { function_description }
+	 *
+	 * @param      data  The data
+	 */
     public void insertFirst(String data) {
     	Node head = new Node(data);
         if (size == 0) {
@@ -41,34 +71,38 @@ class LinkedList{
         first = head;
         size++;
     }
-
-
-
+    /**
+     * { function_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
 	String delete(){
 		String data = last.data;
 		last = last.next;
 		size--;
 		return data;
 	}
-
 	boolean isEmpty(){
 		if(size ==0){
 			return true;
 		}
 		return false;
 	}
-
 	int size(){
 		return size;
 	}
 }
-
+/**
+ * Class for stack.
+ */
 class Stack{
 	LinkedList llist ;
+	/**
+	 * Constructs the object.
+	 */
 	Stack (){
 		llist = new LinkedList();
 	}
-
 	void push(String item){
 		llist.insert(item);
 	}
@@ -83,8 +117,14 @@ class Stack{
 	}
 }
 class AddLargeNumbers {
-    
-    public static LinkedList numberToDigits(String number) {
+	/**
+	 * function for numberToDigits.
+	 *
+	 * @param      number  The number
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
+    public static LinkedList numberToDigits(final String number) {
     	LinkedList object = new LinkedList();
 			for(int i = 0; i < number.length(); i++) {
 				String s = number.charAt(i) + "";
@@ -92,17 +132,32 @@ class AddLargeNumbers {
 			}
 			return object;
     }
-    public static String digitsToNumber(LinkedList list) {
+    /**
+     * { functionfor digitsToNumber }.
+     *
+     * @param      list  The list
+     *
+     * @return     returns string
+     */
+    public static String digitsToNumber(final LinkedList list) {
     	Node nextElemnt = list.first;
     	String string = new String();
-			for(int i = 0; i < list.size; i++) {
+			for (int i = 0; i < list.size; i++) {
 				string += nextElemnt.data + "";
 				nextElemnt = nextElemnt.next;
 			}
 			return string;
     }
-
-    public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {
+/**
+ * Adds large numbers.
+ *
+ * @param      list1  The list 1
+ * @param      list2  The list 2
+ *
+ * @return     return tyope is linkedlist
+ */
+    public static LinkedList addLargeNumbers(final 
+    	LinkedList list1, final LinkedList list2) {
     	LinkedList finalList = new LinkedList();
     	LinkedList slist = new LinkedList();
     	Node elemnt1 = list1.last;
@@ -135,8 +190,7 @@ class AddLargeNumbers {
 					System.out.println(sum);
 					list1.delete();
 					list2.delete();
-				}
-				else {
+				} else {
 				sum = Integer.parseInt(elemnt1.data)
 				+ Integer.parseInt(elemnt2.data);
 				System.out.println(sum);
@@ -154,7 +208,6 @@ class AddLargeNumbers {
 				while (!s2.isEmpty()) {
 					finalList.insert(s2.pop());
 				}
-				
 				/*s1.push(elemnt1.data);
 				elemnt1 = elemnt1.next;
 			}
