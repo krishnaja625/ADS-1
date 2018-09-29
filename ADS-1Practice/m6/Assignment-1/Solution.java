@@ -29,7 +29,7 @@ class Node {
 class LinkedList {
     Node first;
     Node last;
-    int size;
+    private int size;
     /**
      * Constructs the object.
      */
@@ -39,13 +39,13 @@ class LinkedList {
         size = 0;
     }
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      item  The item
      */
     void insert(final String item) {
         Node obj = new Node(item);
-        if(size==0){
+        if (size == 0) {
             first = obj;
             last = obj;
             size++;
@@ -56,7 +56,7 @@ class LinkedList {
         size++;
     }
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      data  The data
      */
@@ -88,7 +88,7 @@ class LinkedList {
      * @return     True if empty, False otherwise.
      */
     boolean isEmpty() {
-        if(size ==0){
+        if (size == 0) {
             return true;
         }
         return false;
@@ -106,11 +106,14 @@ class LinkedList {
  * Class for stack.
  */
 class Stack {
-    LinkedList llist ;
+    /**
+     * { var_description }.
+     */
+    LinkedList llist;
     /**
      * Constructs the object.
      */
-    Stack () {
+    Stack() {
         llist = new LinkedList();
     }
     /**
@@ -118,7 +121,7 @@ class Stack {
      *
      * @param      item  The item
      */
-    void push(String item) {
+    void push(final String item) {
         llist.insert(item);
     }
     /**
@@ -146,6 +149,9 @@ class Stack {
         return llist.size();
     }
 }
+/**
+ * Class for add large numbers.
+ */
 class AddLargeNumbers {
     /**
      * Constructs the object.
@@ -178,7 +184,7 @@ class AddLargeNumbers {
     public static String digitsToNumber(final LinkedList list) {
         Node nextElemnt = list.first;
         String string = new String();
-            for (int i = 0; i < list.size; i++) {
+            for (int i = 0; i < list.size(); i++) {
                 string += nextElemnt.data + "";
                 nextElemnt = nextElemnt.next;
             }
@@ -200,12 +206,12 @@ class AddLargeNumbers {
         Node elemnt2 = list2.last;
         Node elemnt3 = finalList.first;
         int m = 0;
-        if (list1.size > list2.size) {
+        if (list1.size() > list2.size()) {
             slist = list2;
-            m = list1.size - list2.size;
+            m = list1.size() - list2.size();
         } else {
             slist = list1;
-            m = list2.size - list1.size;
+            m = list2.size() - list1.size();
         }
         for (int i = 0; i < m; i++) {
             list2.insertFirst("0");
@@ -215,7 +221,7 @@ class AddLargeNumbers {
         int sum = 0;
 /*      Stack s3 = new Stack();
         Stack s4 = new Stack();*/
-        int n = list1.size;
+        int n = list1.size();
             for (int i = 0; i < n; i++) {
                 elemnt1 = list1.last;
                 elemnt2 = list2.last;
