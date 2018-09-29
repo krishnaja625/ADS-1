@@ -259,7 +259,7 @@ class AddLargeNumbers {
   
          
          while (!res.isEmpty()) {
-            finalList.insertFirst(res.pop());
+            finalList.insert(res.pop());
          }
 
             return finalList;
