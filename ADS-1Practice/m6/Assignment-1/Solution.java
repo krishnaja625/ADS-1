@@ -215,12 +215,7 @@ class AddLargeNumbers {
         for (int i = 0; i < m; i++) {
             list2.insertFirst("0");
         }
-        Stack s1 = new Stack();
-        Stack s2 = new Stack();
-        int sum = 0;
-        String str1 = digitsToNumber(list1);
-        String str2 = digitsToNumber(list2);
-        int n = str2.length();
+/*        int n = list1.size();
             for (int i = 0; i < n; i++) {
                 elemnt1 = list1.last;
                 elemnt2 = list2.last;
@@ -248,57 +243,66 @@ class AddLargeNumbers {
                 }
                 while (!s2.isEmpty()) {
                     finalList.insert(s2.pop());
-                }
-        /*
+                }*/
+        
         Stack s1 = new Stack();
         Stack s2 = new Stack();
         Stack s3 = new Stack();
-        Stack s4 = new Stack();
-            for(int i = 0; i < list1.size; i++) {
+            for(int i = 0; i < list1.size(); i++) {
                 s1.push(elemnt1.data);
                 elemnt1 = elemnt1.next;
             }
-            System.out.println(list1.size);
-            for(int i = 0; i < list1.size; i++) {
+            for(int i = 0; i < list2.size(); i++) {
                 s2.push(elemnt2.data);
                 elemnt2 = elemnt2.next;
             }
-            System.out.println(s2.pop());
-            System.out.println(s2.pop());
-            int sum = 0;
             String num = "";
-            int n1 = list1.size;
-            int n2 = list2.size;
-            for(int i = 0; i < n1; i++) {
-                if (!s4.isEmpty()) {
-                    sum = Integer.parseInt(s1.pop())
-                    + Integer.parseInt(s2.pop())
-                    + Integer.parseInt(s4.pop());
-                }
-                else {
-                sum = Integer.parseInt(s1.pop())
-                + Integer.parseInt(s2.pop());
-                }
-                num = sum + "";
-                if (num.length() == 1) {
-                    s3.push(num);
-                    elemnt3.data = num;
-                    elemnt3 = elemnt3.next;
-                } else {
-                    String[] a = num.split("");
-                    s4.push(a[0]);
-                    s3.push(a[1]);
-                    elemnt3.data = num;
-                    elemnt3 = elemnt3.next;
-                }
-            }
+            
+        int sum = 0, carry = 0, value1, value2;
+         while ((!s1.isEmpty()) && (!s2.isEmpty()))
+         {
+             value1 = Integer.parseInt(s1.pop());
+             value2 = Integer.parseInt(s2.pop());
+             
+             sum   = (value1 + value2 + carry) % 10;
+             carry = (value1 + value2 + carry) / 10;
+            
+String ss = sum + "";
+             s3.push(ss);
+         }
+         while (!s1.isEmpty())
+         {
+             value1 = Integer.parseInt(s1.pop());
+             
+             sum   = (value1 + carry) % 10;
+             carry = (value1 + carry) / 10;
+             
+           String ss = sum + "";
+             s3.push(ss);
+         }
+         
+         while (!s2.isEmpty())
+         {
+             value2 = Integer.parseInt(s2.pop());
+             
+             sum   = (value2 + carry) % 10;
+             carry = (value2 + carry) / 10;
+             String ss = sum + "";
+             s3.push(ss);
+         }
+         
+          
+          
+         if (carry > 0)
+         {
+            String sc = carry + "";
+             s3.push(sc);
+         }
+         while (!s3.isEmpty()) {
+            finalList.insert(s3.pop());
+         }
             return finalList;
     }
-
-*/
-    }
-    return finalList;
-}
 }
 /**
  * Class for solution.
