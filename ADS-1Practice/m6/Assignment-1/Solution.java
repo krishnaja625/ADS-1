@@ -5,13 +5,13 @@ import java.util.Scanner;
 /**
  * Class for node.
  */
-class Node{
+class Node {
     String data;
     Node next;
     /**
      * Constructs the object.
      */
-    Node(){
+    Node() {
 
     }
     /**
@@ -19,21 +19,21 @@ class Node{
      *
      * @param      data  The data
      */
-    Node(final String data){
+    Node(final String data) {
         this.data = data;
     }
 }
 /**
  * List of linkeds.
  */
-class LinkedList{
+class LinkedList {
     Node first;
     Node last;
     int size;
     /**
      * Constructs the object.
      */
-    LinkedList(){
+    LinkedList() {
         first = new Node();
         last = new Node();
         size = 0;
@@ -43,7 +43,7 @@ class LinkedList{
      *
      * @param      item  The item
      */
-    void insert(String item){
+    void insert(final String item) {
         Node obj = new Node(item);
         if(size==0){
             first = obj;
@@ -60,7 +60,7 @@ class LinkedList{
      *
      * @param      data  The data
      */
-    public void insertFirst(String data) {
+    public void insertFirst(final String data) {
         Node head = new Node(data);
         if (size == 0) {
             first = head;
@@ -72,11 +72,11 @@ class LinkedList{
         size++;
     }
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @return     { description_of_the_return_value }
      */
-    String delete(){
+    String delete() {
         String data = last.data;
         last = last.next;
         size--;
@@ -87,46 +87,46 @@ class LinkedList{
      *
      * @return     True if empty, False otherwise.
      */
-    boolean isEmpty(){
+    boolean isEmpty() {
         if(size ==0){
             return true;
         }
         return false;
     }
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @return     { description_of_the_return_value }
      */
-    int size(){
+    int size() {
         return size;
     }
 }
 /**
  * Class for stack.
  */
-class Stack{
+class Stack {
     LinkedList llist ;
     /**
      * Constructs the object.
      */
-    Stack (){
+    Stack () {
         llist = new LinkedList();
     }
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      item  The item
      */
-    void push(String item){
+    void push(String item) {
         llist.insert(item);
     }
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @return     { description_of_the_return_value }
      */
-    String pop(){
+    String pop() {
         return llist.delete();
     }
     /**
@@ -134,19 +134,25 @@ class Stack{
      *
      * @return     True if empty, False otherwise.
      */
-    boolean isEmpty(){
+    boolean isEmpty() {
         return llist.isEmpty();
     }
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @return     { description_of_the_return_value }
      */
-    int size(){
+    int size() {
         return llist.size();
     }
 }
 class AddLargeNumbers {
+    /**
+     * Constructs the object.
+     */
+    protected AddLargeNumbers() {
+
+    }
     /**
      * function for numberToDigits.
      *
@@ -156,7 +162,7 @@ class AddLargeNumbers {
      */
     public static LinkedList numberToDigits(final String number) {
         LinkedList object = new LinkedList();
-            for(int i = 0; i < number.length(); i++) {
+            for (int i = 0; i < number.length(); i++) {
                 String s = number.charAt(i) + "";
                 object.insert(s);
             }
@@ -186,7 +192,7 @@ class AddLargeNumbers {
  *
  * @return     return tyope is linkedlist
  */
-    public static LinkedList addLargeNumbers(final 
+    public static LinkedList addLargeNumbers(final
         LinkedList list1, final LinkedList list2) {
         LinkedList finalList = new LinkedList();
         LinkedList slist = new LinkedList();
