@@ -129,7 +129,7 @@ class AddLargeNumbers {
 				s1.push(elemnt1.data);
 				elemnt1 = elemnt1.next;
 			}
-			for(int i = 0; i < list2.size; i++) {
+			for(int i = 0; i < list1.size; i++) {
 				s2.push(elemnt2.data);
 				elemnt2 = elemnt2.next;
 			}
