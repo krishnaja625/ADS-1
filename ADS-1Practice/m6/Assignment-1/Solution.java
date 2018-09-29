@@ -78,8 +78,8 @@ class LinkedList {
      * @return     { description_of_the_return_value }
      */
     String delete() {
-        String data = last.data;
-        last = last.next;
+        String data = first.data;
+        first = first.next;
         size--;
         return data;
     }
@@ -247,7 +247,7 @@ class AddLargeNumbers {
              value2 = Integer.parseInt(s2.pop());
              
              sum   = (value1 + value2 + v4) % 10;
-             carry = (value1 + value2 + carry) / 10;
+             carry = (value1 + value2 + v4) / 10;
              res.push(sum+"");
             if (carry > 0)
          {
@@ -256,10 +256,7 @@ class AddLargeNumbers {
          }
        
          } 
-           if(!s3.isEmpty())
-         {
-            res.push(s3.pop());
-         }  
+  
          
          while (!res.isEmpty()) {
             finalList.insertFirst(res.pop());
