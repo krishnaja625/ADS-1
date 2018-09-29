@@ -30,6 +30,17 @@ class LinkedList{
 		last = obj;
 		size++;
 	}
+    public void insertFirst(String data) {
+    	Node head = new Node(data);
+        if (size == 0) {
+        	first = head;
+        	size++;
+        	return;
+        }
+        head.next = first;
+        first = head;
+        size++;
+    }
 
 
 
@@ -52,7 +63,7 @@ class LinkedList{
 	}
 }
 
-/*class Stack{
+class Stack{
 	LinkedList llist ;
 	Stack (){
 		llist = new LinkedList();
@@ -71,7 +82,7 @@ class LinkedList{
 		return llist.size();
 	}
 }
-*/class AddLargeNumbers {
+class AddLargeNumbers {
     
     public static LinkedList numberToDigits(String number) {
     	LinkedList object = new LinkedList();
@@ -85,17 +96,68 @@ class LinkedList{
 
     public static String digitsToNumber(LinkedList list) {
     	Node nextElemnt = list.first;
-    	String s = new String();
+    	String string = new String();
 			for(int i = 0; i < list.size; i++) {
-				;
-				s += nextElemnt.data + "";
+				string += nextElemnt.data + "";
 				nextElemnt = nextElemnt.next;
 			}
-			return s;
+			return string;
     }
 
     public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {
-return null;
+    	LinkedList finalList = new LinkedList();
+    	LinkedList slist = new LinkedList();
+    	Node elemnt1 = list1.first;
+    	Node elemnt2 = list2.first;
+    	Node elemnt3 = finalList.first;
+    	int m = 0;
+    	if (list1.size > list2.size) {
+    		slist = list2;
+    		m = list1.size - list2.size;
+    	} else {
+    		slist = list1;
+    		m = list2.size - list1.size;
+    	}
+		for (int i = 0; i < m; i++) {
+			list2.insertFirst("0");
+		}
+		Stack s1 = new Stack();
+		Stack s2 = new Stack();
+		Stack s3 = new Stack();
+		Stack s4 = new Stack();
+			for(int i = 0; i < list1.size; i++) {
+				s1.push(elemnt1.data);
+				elemnt1 = elemnt1.next;
+			}
+			for(int i = 0; i < list2.size; i++) {
+				s2.push(elemnt2.data);
+				elemnt2 = elemnt2.next;
+			}
+			int sum = 0;
+			String num = "";
+			for(int i = 0; i < list2.size; i++) {
+				if (!s4.isEmpty()) {
+					sum = Integer.parseInt(s1.pop()) + Integer.parseInt(s2.pop()) + Integer.parseInt(s4.pop());
+				}
+				else {
+				sum = Integer.parseInt(s1.pop()) + Integer.parseInt(s2.pop());
+			}
+				num = sum + "";
+				if (num.length() == 1) {
+					s3.push(num);
+					elemnt3.data = num;
+					elemnt3 = elemnt3.next;
+
+				} else {
+					String[] a = num.split("");
+					s4.push(a[0]);
+					s3.push(a[1]);
+					elemnt3.data = num;
+					elemnt3 = elemnt3.next;
+				}
+
+			}
+return finalList;
     }
 }
 
