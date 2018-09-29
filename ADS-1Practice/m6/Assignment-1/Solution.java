@@ -299,7 +299,7 @@ String ss = sum + "";
              s3.push(sc);
          }
          while (!s3.isEmpty()) {
-            finalList.insert(s3.pop());
+            finalList.insertFirst(s3.pop());
          }
             return finalList;
     }
