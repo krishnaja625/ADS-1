@@ -107,8 +107,8 @@ class AddLargeNumbers {
     public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {
     	LinkedList finalList = new LinkedList();
     	LinkedList slist = new LinkedList();
-    	Node elemnt1 = list1.first;
-    	Node elemnt2 = list2.first;
+    	Node elemnt1 = list1.last;
+    	Node elemnt2 = list2.last;
     	Node elemnt3 = finalList.first;
     	int m = 0;
     	if (list1.size > list2.size) {
@@ -123,10 +123,33 @@ class AddLargeNumbers {
 		}
 		Stack s1 = new Stack();
 		Stack s2 = new Stack();
-		Stack s3 = new Stack();
-		Stack s4 = new Stack();
+		int sum = 0;
+/*		Stack s3 = new Stack();
+		Stack s4 = new Stack();*/
 			for(int i = 0; i < list1.size; i++) {
-				s1.push(elemnt1.data);
+				elemnt1 = list1.last;
+				elemnt2 = list2.last;
+				if (!s1.isEmpty()) {
+					sum = Integer.parseInt(elemnt1.data) + Integer.parseInt(elemnt2.data) + Integer.parseInt(s1.pop());
+					list1.delete();
+					list2.delete();
+				}
+				else {
+				sum = Integer.parseInt(elemnt1.data) + Integer.parseInt(elemnt2.data);
+				list1.delete();
+				list2.delete();
+				}
+				String el3 = sum + "";
+				if (el3.length() == 1) {
+					finalList.insert(el3);
+					s2.push(el3);
+				} else {
+					String[] a = el3.split("");
+					s1.push(a[0]);
+					s2.push(a[1]);
+				}
+				
+				/*s1.push(elemnt1.data);
 				elemnt1 = elemnt1.next;
 			}
 			System.out.println(list1.size);
@@ -136,7 +159,7 @@ class AddLargeNumbers {
 			}
 /*			System.out.println(s2.pop());
 			System.out.println(s2.pop());*/
-			int sum = 0;
+	/*		int sum = 0;
 			String num = "";
 			int n1 = list1.size;
 			int n2 = list2.size;
@@ -159,9 +182,10 @@ class AddLargeNumbers {
 					elemnt3.data = num;
 					elemnt3 = elemnt3.next;
 				}
-			}
-			return finalList;
+			}*/
     }
+    return finalList;
+}
 }
 
 public class Solution {
