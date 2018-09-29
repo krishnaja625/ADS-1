@@ -138,7 +138,7 @@ class AddLargeNumbers {
 			System.out.println(s2.pop());*/
 			int sum = 0;
 			String num = "";
-			for(int i = 0; i < list2.size; i++) {
+			for(int i = 0; i < list2.size || i < list1.size; i++) {
 				if (!s4.isEmpty()) {
 					sum = Integer.parseInt(s1.pop()) + Integer.parseInt(s2.pop()) + Integer.parseInt(s4.pop());
 				}
