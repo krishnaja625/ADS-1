@@ -12,7 +12,6 @@ class Node {
      * Constructs the object.
      */
     Node() {
-
     }
     /**
      * Constructs the object.
@@ -219,9 +218,9 @@ class AddLargeNumbers {
         Stack s1 = new Stack();
         Stack s2 = new Stack();
         int sum = 0;
-/*      Stack s3 = new Stack();
-        Stack s4 = new Stack();*/
-        int n = list1.size();
+        String str1 = digitsToNumber(list1);
+        String str2 = digitsToNumber(list2);
+        int n = str2.length();
             for (int i = 0; i < n; i++) {
                 elemnt1 = list1.last;
                 elemnt2 = list2.last;
@@ -250,7 +249,13 @@ class AddLargeNumbers {
                 while (!s2.isEmpty()) {
                     finalList.insert(s2.pop());
                 }
-                /*s1.push(elemnt1.data);
+        /*
+        Stack s1 = new Stack();
+        Stack s2 = new Stack();
+        Stack s3 = new Stack();
+        Stack s4 = new Stack();
+            for(int i = 0; i < list1.size; i++) {
+                s1.push(elemnt1.data);
                 elemnt1 = elemnt1.next;
             }
             System.out.println(list1.size);
@@ -258,17 +263,17 @@ class AddLargeNumbers {
                 s2.push(elemnt2.data);
                 elemnt2 = elemnt2.next;
             }
-/*          System.out.println(s2.pop());
-            System.out.println(s2.pop());*/
-    /*      int sum = 0;
+            System.out.println(s2.pop());
+            System.out.println(s2.pop());
+            int sum = 0;
             String num = "";
             int n1 = list1.size;
             int n2 = list2.size;
             for(int i = 0; i < n1; i++) {
                 if (!s4.isEmpty()) {
                     sum = Integer.parseInt(s1.pop())
-                     + Integer.parseInt(s2.pop())
-                     + Integer.parseInt(s4.pop());
+                    + Integer.parseInt(s2.pop())
+                    + Integer.parseInt(s4.pop());
                 }
                 else {
                 sum = Integer.parseInt(s1.pop())
@@ -286,7 +291,11 @@ class AddLargeNumbers {
                     elemnt3.data = num;
                     elemnt3 = elemnt3.next;
                 }
-            }*/
+            }
+            return finalList;
+    }
+
+*/
     }
     return finalList;
 }
