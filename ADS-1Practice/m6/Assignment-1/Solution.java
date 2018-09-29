@@ -45,8 +45,8 @@ class LinkedList{
 
 
 	String delete(){
-		String data = first.data;
-		first = first.next;
+		String data = last.data;
+		last = last.next;
 		size--;
 		return data;
 	}
