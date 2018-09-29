@@ -91,9 +91,7 @@ class AddLargeNumbers {
 				object.insert(s);
 			}
 			return object;
-
     }
-
     public static String digitsToNumber(LinkedList list) {
     	Node nextElemnt = list.first;
     	String string = new String();
@@ -131,30 +129,30 @@ class AddLargeNumbers {
 				elemnt1 = list1.last;
 				elemnt2 = list2.last;
 				if (!s1.isEmpty()) {
-					sum = Integer.parseInt(elemnt1.data) + Integer.parseInt(elemnt2.data) + Integer.parseInt(s1.pop());
+					sum = Integer.parseInt(elemnt1.data)
+					+ Integer.parseInt(elemnt2.data)
+					+ Integer.parseInt(s1.pop());
 					System.out.println(sum);
 					list1.delete();
 					list2.delete();
 				}
 				else {
-				sum = Integer.parseInt(elemnt1.data) + Integer.parseInt(elemnt2.data);
+				sum = Integer.parseInt(elemnt1.data)
+				+ Integer.parseInt(elemnt2.data);
 				System.out.println(sum);
 				list1.delete();
 				list2.delete();
 				}
 				String el3 = sum + "";
 				if (el3.length() == 1) {
-					finalList.insert(el3);
 					s2.push(el3);
 				} else {
 					String[] a = el3.split("");
 					s1.push(a[0]);
 					s2.push(a[1]);
 				}
-				if (!s2.isEmpty() || !s1.isEmpty()) {
-					sum = Integer.parseInt(s2.pop()) + Integer.parseInt(s1.pop());
-String s11 = sum + "";
-finalList.insert(s11);
+				while (!s2.isEmpty()) {
+					finalList.insert(s2.pop());
 				}
 				
 				/*s1.push(elemnt1.data);
