@@ -133,6 +133,8 @@ class AddLargeNumbers {
 				s2.push(elemnt2.data);
 				elemnt2 = elemnt2.next;
 			}
+			System.out.println(s2.pop());
+			System.out.println(s2.pop());
 			int sum = 0;
 			String num = "";
 			for(int i = 0; i < list2.size; i++) {
