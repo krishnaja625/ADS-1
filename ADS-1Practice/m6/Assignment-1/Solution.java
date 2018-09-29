@@ -51,7 +51,9 @@ class LinkedList {
             return;
         }
         last.next = obj;
-        last = obj;
+        // last = obj;
+        last = last.next;
+
         size++;
     }
     /**
@@ -201,50 +203,25 @@ class AddLargeNumbers {
         LinkedList list1, final LinkedList list2) {
         LinkedList finalList = new LinkedList();
         LinkedList slist = new LinkedList();
-        Node elemnt1 = list1.first;
-        Node elemnt2 = list2.first;
-        Node elemnt3 = finalList.first;
+
         int m = 0;
         if (list1.size() > list2.size()) {
-            slist = list2;
             m = list1.size() - list2.size();
-        } else {
-            slist = list1;
-            m = list2.size() - list1.size();
-        }
         for (int i = 0; i < m; i++) {
             list2.insertFirst("0");
         }
-/*        int n = list1.size();
-            for (int i = 0; i < n; i++) {
-                elemnt1 = list1.last;
-                elemnt2 = list2.last;
-                if (!s1.isEmpty()) {
-                    sum = Integer.parseInt(elemnt1.data)
-                    + Integer.parseInt(elemnt2.data)
-                    + Integer.parseInt(s1.pop());
-                    System.out.println(sum);
-                    list1.delete();
-                    list2.delete();
-                } else {
-                sum = Integer.parseInt(elemnt1.data)
-                + Integer.parseInt(elemnt2.data);
-                System.out.println(sum);
-                list1.delete();
-                list2.delete();
-                }
-                String el3 = sum + "";
-                if (el3.length() == 1) {
-                    s2.push(el3);
-                } else {
-                    String[] a = el3.split("");
-                    s1.push(a[0]);
-                    s2.push(a[1]);
-                }
-                while (!s2.isEmpty()) {
-                    finalList.insert(s2.pop());
-                }*/
-        
+        } else {
+            m = list2.size() - list1.size();
+        for (int i = 0; i < m; i++) {
+            list1.insertFirst("0");
+        }
+        }
+        Node elemnt1 = list1.first;
+        Node elemnt2 = list2.first;
+        Node elemnt3 = finalList.first;
+        // System.out.println(digitsToNumber(list1)+"  ---"+list1.size());
+        // System.out.println(digitsToNumber(list2)+"  ---"+list2.size());
+            
         Stack s1 = new Stack();
         Stack s2 = new Stack();
         Stack s3 = new Stack();
