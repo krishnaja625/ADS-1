@@ -150,6 +150,11 @@ class AddLargeNumbers {
 					s1.push(a[0]);
 					s2.push(a[1]);
 				}
+				if (!s2.isEmpty() || !s1.isEmpty()) {
+					sum = Integer.parseInt(s2.pop()) + Integer.parseInt(s1.pop());
+String s11 = sum + "";
+finalList.insert(s11);
+				}
 				
 				/*s1.push(elemnt1.data);
 				elemnt1 = elemnt1.next;
