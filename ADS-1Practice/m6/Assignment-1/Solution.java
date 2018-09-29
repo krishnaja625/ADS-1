@@ -138,19 +138,20 @@ class AddLargeNumbers {
 			System.out.println(s2.pop());*/
 			int sum = 0;
 			String num = "";
-			for(int i = 0; i < list2.size || i < list1.size; i++) {
+			int n1 = list1.size;
+			int n2 = list2.size;
+			for(int i = 0; i < n1; i++) {
 				if (!s4.isEmpty()) {
 					sum = Integer.parseInt(s1.pop()) + Integer.parseInt(s2.pop()) + Integer.parseInt(s4.pop());
 				}
 				else {
 				sum = Integer.parseInt(s1.pop()) + Integer.parseInt(s2.pop());
-			}
+				}
 				num = sum + "";
 				if (num.length() == 1) {
 					s3.push(num);
 					elemnt3.data = num;
 					elemnt3 = elemnt3.next;
-
 				} else {
 					String[] a = num.split("");
 					s4.push(a[0]);
@@ -158,9 +159,8 @@ class AddLargeNumbers {
 					elemnt3.data = num;
 					elemnt3 = elemnt3.next;
 				}
-
 			}
-return finalList;
+			return finalList;
     }
 }
 
