@@ -2,31 +2,33 @@ import java.util.Scanner;
 class Node{
 	String data;
 	Node next;
-/*	Node(){
+	Node(){
 
 	}
 	Node(String data){
 		this.data = data;
-	}*/
+	}
 }
 class LinkedList{
 	Node first;
+	Node last;
 	int size;
 	LinkedList(){
 		first = new Node();
+		last = new Node();
 		size = 0;
 	}
-
 	void insert(String item){
-		Node obj = new Node();
-		obj.data = item;
-		if(size == 0){
+		Node obj = new Node(item);
+		if(size==0){
 			first = obj;
+			last = obj;
 			size++;
 			return;
 		}
-		obj.next = first;
-		first = obj;
+		last.next = obj;
+		last = obj;
+		size++;
 	}
 
 
@@ -82,7 +84,14 @@ class LinkedList{
     }
 
     public static String digitsToNumber(LinkedList list) {
-return null;
+    	Node nextElemnt = list.first;
+    	String s = new String();
+			for(int i = 0; i < list.size; i++) {
+				;
+				s += nextElemnt.data + "";
+				nextElemnt = nextElemnt.next;
+			}
+			return s;
     }
 
     public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {
@@ -103,13 +112,13 @@ public class Solution {
                 System.out.println(AddLargeNumbers.digitsToNumber(pDigits));
                 System.out.println(AddLargeNumbers.digitsToNumber(qDigits));
                 break;
-/*
+
             case "addLargeNumbers":
-                LinkedList pDigits = AddLargeNumbers.numberToDigits(p);
-                LinkedList qDigits = AddLargeNumbers.numberToDigits(q);
+                pDigits = AddLargeNumbers.numberToDigits(p);
+                qDigits = AddLargeNumbers.numberToDigits(q);
                 LinkedList result = AddLargeNumbers.addLargeNumbers(pDigits, qDigits);
                 System.out.println(AddLargeNumbers.digitsToNumber(result));
-                break;*/
+                break;
         }
     }
     
