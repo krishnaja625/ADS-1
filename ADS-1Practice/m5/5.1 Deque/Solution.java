@@ -76,40 +76,40 @@ public final class Solution {
      */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
-        Deque d = new Deque();
+        Deque dq = new Deque();
         int n = Integer.parseInt(sc.nextLine());
         while (n != 0) {
             String line = sc.nextLine();
             String[] tokens = line.split(" ");
             switch (tokens[0]) {
             case "isEmpty":
-                System.out.println(d.isEmpty());
+                System.out.println(dq.isEmpty());
                 break;
             case "size":
-                System.out.println(d.size());
+                System.out.println(dq.size());
                 break;
             case "pushLeft":
-                d.pushLeft(Integer.parseInt(tokens[1]));
-                d.display();
+                dq.pushLeft(Integer.parseInt(tokens[1]));
+                dq.display();
                 break;
             case "pushRight":
-                d.pushRight(Integer.parseInt(tokens[1]));
-                d.display();
+                dq.pushRight(Integer.parseInt(tokens[1]));
+                dq.display();
                 break;
             case "popLeft":
-                if (d.size() == 0) {
+                if (dq.size() == 0) {
                     System.out.println("Deck is empty");
                 } else {
-                    d.popLeft();
-                    d.display();
+                    dq.popLeft();
+                    dq.display();
                 }
                 break;
             case "popRight":
-                if (d.size() == 0) {
+                if (dq.size() == 0) {
                     System.out.println("Deck is empty");
                 } else {
-                    d.popRight();
-                    d.display();
+                    dq.popRight();
+                    dq.display();
                 }
                 break;
             default:
