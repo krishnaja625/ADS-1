@@ -1,8 +1,8 @@
-class Steque {
 class Node {
 		int data;
 		Node next;
 	}
+class Steque {
 	Node start;
 	Node last;
 	int size;
@@ -17,6 +17,7 @@ class Node {
 		}
 		current.next = start;
 		start = current;
+		size++;
 		display();
 	}
 	void pop() {
