@@ -123,7 +123,7 @@ class Stack {
      * @param      item  The item
      */
     void push(final String item) {
-        llist.insert(item);
+        llist.insertFirst(item);
     }
     /**
      * { function_description }.
@@ -215,10 +215,12 @@ class AddLargeNumbers {
         for (int i = 0; i < m; i++) {
             list1.insertFirst("0");
         }
+        // System.out.println(digitsToNumber(list1) + "\n" + digitsToNumber(list2));
         }
         Node elemnt1 = list1.first;
         Node elemnt2 = list2.first;
-        Node elemnt3 = finalList.first;
+        // System.out.println("l1"+list1.first.data+"l2"+list2.first.data);
+        // Node elemnt3 = finalList.first;
         // System.out.println(digitsToNumber(list1)+"  ---"+list1.size());
         // System.out.println(digitsToNumber(list2)+"  ---"+list2.size());
             
@@ -234,17 +236,20 @@ class AddLargeNumbers {
                 s2.push(elemnt2.data);
                 elemnt2 = elemnt2.next;
             }
-            String num = "";
-            
         int sum = 0, carry = 0, value1, value2,v4=0;
          while ((!s1.isEmpty()) && (!s2.isEmpty()))
          {
             if(!s3.isEmpty())
             {
+                // System.out.println("MSIT");
                 v4 = Integer.parseInt(s3.pop());
+                // System.out.println("v4 = "+v4);
             }
              value1 = Integer.parseInt(s1.pop());
              value2 = Integer.parseInt(s2.pop());
+                // System.out.println("v1 = "+value1);
+                // System.out.println("v2 = "+value2);
+
              
              sum   = (value1 + value2 + v4) % 10;
              carry = (value1 + value2 + v4) / 10;
@@ -256,8 +261,9 @@ class AddLargeNumbers {
          }
        
          } 
-  
-         
+         if(!s3.isEmpty()) {
+            res.push(s3.pop());
+         }
          while (!res.isEmpty()) {
             finalList.insert(res.pop());
          }
