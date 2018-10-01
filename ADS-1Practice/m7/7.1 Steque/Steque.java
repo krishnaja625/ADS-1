@@ -61,6 +61,6 @@ class Node {
 			System.out.print(temp.data + ", ");
 			temp = temp.next;
 		}
-		// System.out.println(temp.data);
+		System.out.println();
 	}
 }
