@@ -25,6 +25,7 @@ class Node {
 /*		int data = start.data;*/
 		start = start.next;
 		size--;
+		display();
 	}
 	void enqueue(int data) {
 		Node current = new Node();
@@ -42,6 +43,7 @@ class Node {
 			temp.next = current;
 			current.next = null;
 		}
+		display();
 	}
 	void display() {
 		if (size == 0) {
