@@ -27,16 +27,12 @@ public final class Solution {
                 switch (token[0]) {
                 case "push":
                     st.push(Integer.parseInt(token[1]));
-                    st.print();
                     break;
                 case "enqueue":
-                    st.insertLast(
-                        Integer.parseInt(token[1]));
-                    st.print();
+                    st.enqueue(Integer.parseInt(token[1]));
                     break;
                 case "pop":
                     st.pop();
-                    st.print();
                     break;
                 default:
                     break;

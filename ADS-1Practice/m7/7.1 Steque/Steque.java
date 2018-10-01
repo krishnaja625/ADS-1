@@ -1,8 +1,107 @@
 class Node {
 		int data;
 		Node next;
+		Node() {
+
+		}
+		Node(int item) {
+			this.data = item;
+		}
 	}
-class Steque {
+class LinkedList{
+	Node first;
+	Node last;
+	int size;
+	LinkedList(){
+		first = new Node();
+		last = new Node();
+		size = 0;
+	}
+
+	void insert(int item){
+		Node obj = new Node();
+		obj.data = item;
+		if(size == 0){
+			first = obj;
+			size++;
+			return;
+		}
+		obj.next = first;
+		first = obj;
+		print();
+	}
+	void insertLast(int data) {
+		Node obj = new Node(data);
+		if(size==0){
+			first = obj;
+			last = obj;
+			size++;
+			return;
+		}
+		last.next = obj;
+		last = obj;
+		size++;
+	}
+	int delete(){
+		int data = first.data;
+		first = first.next;
+		size--;
+		print();
+		return data;
+	}
+	void print() {
+		if (size == 0) {
+			System.out.println("Steque is empty.");
+			return;
+		}
+		if (first.next == null) {
+			System.out.println(first.data);
+			return;
+		}
+		Node temp = first.next;
+		while (temp.next != null) {
+			System.out.print(temp.data + ", ");
+			temp = temp.next;
+		}
+		System.out.println(temp.data);
+	}
+
+	boolean isEmpty(){
+		if(size ==0){
+			return true;
+		}
+		return false;
+	}
+
+	int size(){
+		return size;
+	}
+}
+
+class Steque{
+	LinkedList ll ;
+	Steque (){
+		ll = new LinkedList();
+	}
+	void push(int item){
+		ll.insert(item);
+	}
+	int pop(){
+		ll.print();
+		return ll.delete();
+	}
+	void enqueue(int item) {
+		ll.insertLast(item);
+	}
+	boolean isEmpty(){
+		return ll.isEmpty();
+	}
+	int size(){
+		return ll.size();
+	}
+}
+
+/*class Steque {
 	Node head;
 	int size;
 	void push(int data) {
@@ -62,4 +161,4 @@ class Steque {
 		}
 		System.out.println(temp.data);
 	}
-}
+}*/
