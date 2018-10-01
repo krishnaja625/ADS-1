@@ -23,10 +23,12 @@ class Node {
 		if (size == 0) {
 			System.out.println("Steque is empty.");
 			return;
-		}
-		// int data = start.data;
+		} else {
 		start = start.next;
 		size--;
+		}
+		// int data = start.data;
+
 		display();
 	}
 	void enqueue(int data) {
