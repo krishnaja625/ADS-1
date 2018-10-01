@@ -36,16 +36,18 @@ class Node {
 			current.data = data;
 			current.next = null;
 			start = current;
+			display();
 		} else {
-			Node temp = start;
-			while (temp.next != null) {
-				temp = temp.next;
+			Node tmp = start;
+			while (tmp.next != null) {
+				tmp = tmp.next;
 			}
 			current.data = data;
-			temp.next = current;
+			tmp.next = current;
 			current.next = null;
+			display();
 		}
-		display();
+		
 	}
 	void display() {
 		if (size == 0) {
@@ -56,11 +58,11 @@ class Node {
 			System.out.println(start.data);
 			return;
 		}
-		Node temp = start;
-		while (temp.next != null) {
-			System.out.print(temp.data + ", ");
-			temp = temp.next;
+		Node tmp = start;
+		while (tmp.next != null) {
+			System.out.print(tmp.data + ", ");
+			tmp = tmp.next;
 		}
-		System.out.println();
+		System.out.println(tmp.data);
 	}
 }
