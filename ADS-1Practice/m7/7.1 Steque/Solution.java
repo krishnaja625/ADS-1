@@ -89,7 +89,7 @@ class LinkedList {
         }
         Node tmp = first;
         while (tmp.next != null) {
-            System.out.println(tmp.data + ", ");
+            System.out.print(tmp.data + ", ");
             tmp = tmp.next;
         }
 
