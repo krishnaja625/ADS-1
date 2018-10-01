@@ -1,8 +1,8 @@
-class Steque {
 class Node {
 		int data;
 		Node next;
 	}
+class Steque {
 	Node head;
 	int size;
 	void push(int data) {
