@@ -24,7 +24,7 @@ class Node {
 			System.out.println("Steque is empty.");
 			return;
 		}
-/*		int data = start.data;*/
+		// int data = start.data;
 		start = start.next;
 		size--;
 		display();
@@ -61,6 +61,6 @@ class Node {
 			System.out.print(temp.data + ", ");
 			temp = temp.next;
 		}
-		System.out.println(temp.data);
+		// System.out.println(temp.data);
 	}
 }
