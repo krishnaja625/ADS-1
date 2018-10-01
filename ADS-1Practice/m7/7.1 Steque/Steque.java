@@ -12,6 +12,7 @@ class Node {
 		if(size == 0){
 			start = current;
 			size++;
+			display();
 			return;
 		}
 		current.next = start;
