@@ -16,6 +16,7 @@ class Node {
 		}
 		current.next = start;
 		start = current;
+		display();
 	}
 	void pop() {
 		if (size == 0) {
