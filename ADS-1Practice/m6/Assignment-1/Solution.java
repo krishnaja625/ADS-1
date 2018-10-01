@@ -216,7 +216,7 @@ class AddLargeNumbers {
             list1.insertFirst("0");
         }
         // System.out.println(digitsToNumber(list1) + "\n" + digitsToNumber(list2));
-        }
+                }
         Node elemnt1 = list1.first;
         Node elemnt2 = list2.first;
         // System.out.println("l1"+list1.first.data+"l2"+list2.first.data);
@@ -237,14 +237,16 @@ class AddLargeNumbers {
                 elemnt2 = elemnt2.next;
             }
         int sum = 0, carry = 0, value1, value2,v4=0;
+        s3.push(0+"");
+
          while ((!s1.isEmpty()) && (!s2.isEmpty()))
          {
-            if(!s3.isEmpty())
-            {
+            // if(!s3.isEmpty())
+            // {
                 // System.out.println("MSIT");
                 v4 = Integer.parseInt(s3.pop());
                 // System.out.println("v4 = "+v4);
-            }
+            // }
              value1 = Integer.parseInt(s1.pop());
              value2 = Integer.parseInt(s2.pop());
                 // System.out.println("v1 = "+value1);
@@ -254,15 +256,17 @@ class AddLargeNumbers {
              sum   = (value1 + value2 + v4) % 10;
              carry = (value1 + value2 + v4) / 10;
              res.push(sum+"");
-            if (carry > 0)
-         {
+         //    if (carry > 0)
+         // {
             String sc = carry + "";
              s3.push(sc);
-         }
+         // }
        
          } 
          if(!s3.isEmpty()) {
-            res.push(s3.pop());
+            String r = s3.pop();
+            if(!r.equals("0"))
+            res.push(r);
          }
          while (!res.isEmpty()) {
             finalList.insert(res.pop());
