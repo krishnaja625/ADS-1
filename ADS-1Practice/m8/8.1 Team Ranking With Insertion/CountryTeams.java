@@ -1,3 +1,7 @@
+/**
+ * Class for country teams details.
+ * This is to 
+ */
 class CountryTeams implements Comparable<CountryTeams>{
 	String countryname;
 	int wins;
