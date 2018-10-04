@@ -34,8 +34,7 @@ public final class Solution {
                 llist.reverse();
                 llist.display();
             } catch(Exception e) {
-            	System.out.println("No elements to reverse.");
-               
+            	System.out.println("No elements to reverse.");           
             }
              break;
             }
