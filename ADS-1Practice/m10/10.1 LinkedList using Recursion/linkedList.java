@@ -20,11 +20,9 @@
 	}
 class LinkedList {
 	private Node head;
-	private Node tail;
 	private int size;
 	LinkedList() {
 		head = null;
-		tail = null;
 		size = 0;
 	}
 	boolean isEmpty() {
@@ -35,14 +33,10 @@ class LinkedList {
 	}
 	void insertAt(int pos, int data) {
 		Node first = new Node(data, null);
-		if (getsize() == 0)
-		{
-			head = first;
-		}
 		if (pos == 0){
-				Node temp = head;
-				first.setnext(temp);
+				first.setnext(head);
 				head = first;
+				size++;
 				return;
 		}
 		Node second = head;
