@@ -58,7 +58,7 @@ class teamObjects {
 
 	/**
 	 * Time complexity is constant.
-	 *
+	 * Time complexity = O(1)
 	 * @param      arr   The arr
 	 * @param      i     { parameter_description }
 	 * @param      j     { parameter_description }
