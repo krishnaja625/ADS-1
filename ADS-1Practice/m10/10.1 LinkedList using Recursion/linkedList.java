@@ -39,6 +39,11 @@ class LinkedList {
 		{
 			head = first;
 		}
+		if (pos == 0){
+				Node temp = head;
+				first.setnext(temp);
+				head = first;
+		}
 		Node second = head;
 		for (int i = 0; i < size; i++) {
 			if (i == pos-1) {
