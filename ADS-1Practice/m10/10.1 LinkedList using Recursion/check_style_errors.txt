@@ -1,5 +1,8 @@
 Starting audit...
 [ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m10\10.1 LinkedList using Recursion\Solution.java:22: switch without "default" clause. [MissingSwitchDefault]
-[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m10\10.1 LinkedList using Recursion\Solution.java:24: Line is longer than 80 characters (found 89). [LineLength]
+[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m10\10.1 LinkedList using Recursion\Solution.java:25: Line is longer than 80 characters (found 89). [LineLength]
+[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m10\10.1 LinkedList using Recursion\Solution.java:27:20: 'catch' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m10\10.1 LinkedList using Recursion\Solution.java:28:13: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m10\10.1 LinkedList using Recursion\Solution.java:35:20: 'catch' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 5 errors.

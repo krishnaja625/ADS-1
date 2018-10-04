@@ -21,13 +21,21 @@ public final class Solution {
             String[] tokens = line.split(" ");
             switch (tokens[0]) {
             case "insertAt":
+            try {
                 llist.insertat(Integer.parseInt(tokens[1]), Integer.parseInt(tokens[2]));
                 llist.display();
+            } catch(Exception e) {
+            	System.out.println("Can't insert at this position.");
                 break;
+            }
             case "reverse":
+            try {
                 llist.reverse();
                 llist.display();
+            } catch(Exception e) {
+            	System.out.println("No elements to reverse.");
                 break;
+            }
             }
         }
     }

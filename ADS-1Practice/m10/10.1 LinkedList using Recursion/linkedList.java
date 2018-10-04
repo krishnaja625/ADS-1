@@ -55,7 +55,10 @@ class LinkedList {
 		System.out.println("Can't insert at this position.");
 	}
 	}*/
-	void insertat(int pos, int data) {
+	void insertat(int pos, int data) throws Exception{
+		if(pos<0 || pos>getsize()) {
+			throw new Exception();
+		}
 		Node first = new Node(data, null);
 		if (pos == 0){
 				first.setnext(head);
@@ -69,6 +72,7 @@ class LinkedList {
 	Node insertat(int pos, Node head, Node first, int count) {
 		if (pos == count) {
 			first.setnext(head);
+			size++;
 			return first;
 		}
 		head.setnext(insertat(pos, head.getnext(), first, count+1));
