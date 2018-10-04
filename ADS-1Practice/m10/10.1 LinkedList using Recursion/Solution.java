@@ -29,7 +29,6 @@ public final class Solution {
             } catch (Exception e) {
                 System.out.println(
                     "Can't insert at this position.");
-                
             }
             break;
             case "reverse":
@@ -38,7 +37,7 @@ public final class Solution {
                 llist.display();
             } catch (Exception e) {
                 System.out.println(
-                    "No elements to reverse.");           
+                    "No elements to reverse.");
             }
              break;
             default:
