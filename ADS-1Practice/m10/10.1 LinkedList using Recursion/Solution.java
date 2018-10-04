@@ -23,12 +23,12 @@ public final class Solution {
             case "insertAt":
             try {
                 llist.insertat(Integer.parseInt(
-                	tokens[1]), Integer.parseInt(
-                	tokens[2]));
+                    tokens[1]), Integer.parseInt(
+                    tokens[2]));
                 llist.display();
-            } catch(Exception e) {
-            	System.out.println(
-            		"Can't insert at this position.");
+            } catch (Exception e) {
+                System.out.println(
+                    "Can't insert at this position.");
                 
             }
             break;
@@ -36,9 +36,9 @@ public final class Solution {
             try {
                 llist.reverse();
                 llist.display();
-            } catch(Exception e) {
-            	System.out.println(
-            		"No elements to reverse.");           
+            } catch (Exception e) {
+                System.out.println(
+                    "No elements to reverse.");           
             }
              break;
             default:
