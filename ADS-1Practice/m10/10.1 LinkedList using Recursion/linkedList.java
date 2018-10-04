@@ -31,7 +31,7 @@ class LinkedList {
 	int getsize() {
 		return size;
 	}
-	void insertAt(int pos, int data) {
+/*	void insertAt(int pos, int data) {
 		if (pos < size || pos == 0) {
 		Node first = new Node(data, null);
 		if (pos == 0){
@@ -54,8 +54,39 @@ class LinkedList {
 	} else {
 		System.out.println("Can't insert at this position.");
 	}
+	}*/
+	void insertat(int pos, int data) {
+		Node first = new Node(data, null);
+		if (pos == 0){
+				first.setnext(head);
+				head = first;
+				size++;
+				return;
+		}
+		insertat(pos, head, first, 0);
+
+	}
+	Node insertat(int pos, Node head, Node first, int count) {
+		if (pos == count) {
+			first.setnext(head);
+			return first;
+		}
+		head.setnext(insertat(pos, head.getnext(), first, count+1));
+		return head;
 	}
 	void reverse() {
+		recursivereverse(null, head);
+	}
+	void recursivereverse(Node previous, Node present) {
+		if(present!=null) {
+			recursivereverse(present, present.getnext());
+			present.setnext(previous);
+		} else {
+			head = previous;
+		}
+
+	}
+/*	void reverse() {
 		Node previous = null;
 		Node present = head;
 		Node after = null;
@@ -66,7 +97,7 @@ class LinkedList {
 			present = after;
 		}
 		head = previous;
-	}
+	}*/
 	void display() {
 		if (size == 0) {
 			System.out.println("");

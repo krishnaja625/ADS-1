@@ -21,7 +21,7 @@ public final class Solution {
             String[] tokens = line.split(" ");
             switch (tokens[0]) {
             case "insertAt":
-                llist.insertAt(Integer.parseInt(tokens[1]), Integer.parseInt(tokens[2]));
+                llist.insertat(Integer.parseInt(tokens[1]), Integer.parseInt(tokens[2]));
                 llist.display();
                 break;
             case "reverse":
