@@ -32,7 +32,7 @@ class LinkedList {
 		return size;
 	}
 	void insertAt(int pos, int data) {
-		if (pos > size || pos == 0) {
+		if (!(pos > size-1) || pos == 0) {
 		Node first = new Node(data, null);
 		if (pos == 0){
 				first.setnext(head);
