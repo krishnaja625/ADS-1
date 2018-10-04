@@ -1,6 +1,18 @@
+/**
+ * Class for team objects.
+ */
 class teamObjects {
+	/**
+	 * teamArray is private.
+	 */
 	private CountryTeams[] teamArray;
+	/**
+	 * size is private variable.
+	 */
 	private int size;
+	/**
+	 * Constructs the object.
+	 */
 	teamObjects() {
 		teamArray = new CountryTeams[10];
 		size = 0;
@@ -8,7 +20,7 @@ class teamObjects {
 	/* As there is a single line operation the time complexity is constant.
 	 Time complexity = O(1)
 	**/
-	public void addCountryTeams(CountryTeams t) {
+	public void addCountryTeams(final CountryTeams t) {
 		teamArray[size++] = t;
 	}
 	/**
@@ -32,7 +44,7 @@ class teamObjects {
  * @param      i     { parameter_description }
  * @param      j     { parameter_description }
  */
-	public void swaps(CountryTeams[] team, int i, int j) {
+	public void swaps(final CountryTeams[] team, final int i, final int j) {
 		CountryTeams ct = teamArray[j];
 		teamArray[j] = teamArray[i];
 		teamArray[i] = ct; 
@@ -65,7 +77,7 @@ class teamObjects {
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	boolean lessThan(CountryTeams[] arr, int i, int j) {
+	boolean lessThan(final CountryTeams[] arr, final int i, final int j) {
 		return  arr[i].compareTo(arr[j]) > 0;
 	}
 }
