@@ -6,7 +6,7 @@ public final class Solution {
     /**
      * Constructs the object.
      */
-    private Solution() {
+    protected Solution() {
 
     }
     /**
@@ -22,10 +22,13 @@ public final class Solution {
             switch (tokens[0]) {
             case "insertAt":
             try {
-                llist.insertat(Integer.parseInt(tokens[1]), Integer.parseInt(tokens[2]));
+                llist.insertat(Integer.parseInt(
+                	tokens[1]), Integer.parseInt(
+                	tokens[2]));
                 llist.display();
             } catch(Exception e) {
-            	System.out.println("Can't insert at this position.");
+            	System.out.println(
+            		"Can't insert at this position.");
                 
             }
             break;
@@ -34,9 +37,11 @@ public final class Solution {
                 llist.reverse();
                 llist.display();
             } catch(Exception e) {
-            	System.out.println("No elements to reverse.");           
+            	System.out.println(
+            		"No elements to reverse.");           
             }
              break;
+            default:
             }
         }
     }
