@@ -43,6 +43,7 @@ class LinkedList {
 				Node temp = head;
 				first.setnext(temp);
 				head = first;
+				return;
 		}
 		Node second = head;
 		for (int i = 0; i < size; i++) {
