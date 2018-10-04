@@ -73,7 +73,7 @@ class LinkedList {
 			return;
 		}
 		Node a = head;
-		System.out.print(head.getdata());
+		System.out.print(head.getdata() + ", ");
 		a = head.getnext();
 		while (a.getnext() != null) {
 			System.out.print(a.getdata() + ", ");
