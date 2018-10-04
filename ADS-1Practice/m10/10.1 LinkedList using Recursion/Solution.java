@@ -26,16 +26,18 @@ public final class Solution {
                 llist.display();
             } catch(Exception e) {
             	System.out.println("Can't insert at this position.");
-                break;
+                
             }
+            break;
             case "reverse":
             try {
                 llist.reverse();
                 llist.display();
             } catch(Exception e) {
             	System.out.println("No elements to reverse.");
-                break;
+               
             }
+             break;
             }
         }
     }
