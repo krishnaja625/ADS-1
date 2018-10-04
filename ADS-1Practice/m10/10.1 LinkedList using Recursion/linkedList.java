@@ -78,10 +78,10 @@ class LinkedList {
 		head.setnext(insertat(pos, head.getnext(), first, count+1));
 		return head;
 	}
-	void reverse() /*throws Exception*/{
-/*		if(getsize() == 0) {
+	void reverse() throws Exception{
+		if(getsize() == 0) {
 			throw new Exception();
-		}*/
+		}
 		recursivereverse(null, head);
 	}
 	void recursivereverse(Node previous, Node present) {
