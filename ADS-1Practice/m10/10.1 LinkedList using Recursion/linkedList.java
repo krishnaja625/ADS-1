@@ -32,6 +32,7 @@ class LinkedList {
 		return size;
 	}
 	void insertAt(int pos, int data) {
+		if (pos > size-1) {
 		Node first = new Node(data, null);
 		if (pos == 0){
 				first.setnext(head);
@@ -50,6 +51,9 @@ class LinkedList {
 			second = second.getnext();
 		}
 		size++;
+	} else {
+		System.out.println("Can't insert at this position.");
+	}
 	}
 	void reverse() {
 		Node previous = null;
