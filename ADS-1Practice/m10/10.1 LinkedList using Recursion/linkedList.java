@@ -35,10 +35,13 @@ class LinkedList {
 	}
 	void insertAt(int pos, int data) {
 		Node first = new Node(data, null);
+		if (getsize() == 0)
+		{
+			head = first;
+		}
 		Node second = head;
-		pos--;
-		for (int i = 1; i < size; i++) {
-			if (i == pos) {
+		for (int i = 0; i < size; i++) {
+			if (i == pos-1) {
 				Node temp = second.getnext();
 				second.setnext(first);
 				first.setnext(temp);
