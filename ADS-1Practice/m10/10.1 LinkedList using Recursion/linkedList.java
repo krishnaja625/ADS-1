@@ -58,6 +58,7 @@ class LinkedList {
 			previous = present;
 			present = after;
 		}
+		head = previous;
 	}
 	void display() {
 		if (size == 0) {
