@@ -72,7 +72,7 @@ class LinkedList {
 		System.out.print(head.getdata());
 		first = head.getnext();
 		while (first.getnext() != null) {
-			System.out.print(first.getdata());
+			System.out.print(first.getdata() + ", ");
 			first = first.getnext();
 		}
 		System.out.print(", " + first.getdata() + "\n");
