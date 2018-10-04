@@ -41,9 +41,11 @@ Can't insert at this position.
 5, 7
 71, 5, 7
 75, 71, 5, 7
-Exception in thread "main" java.lang.NullPointerException
-	at LinkedList.insertAt(linkedList.java:46)
-	at Solution.main(Solution.java:24)
+Can't insert at this position.
+75, 71, 5, 7
+Can't insert at this position.
+75, 71, 5, 7
+7, 5, 71, 75
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
