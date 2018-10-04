@@ -64,17 +64,17 @@ class LinkedList {
 			System.out.println("");
 			return;
 		}
-/*		if (head.getnext() == null) {
+		if (head.getnext() == null) {
 			System.out.println(head.getdata());
 			return;
-		}*/
-		Node first = head;
-		System.out.print(head.getdata());
-		first = head.getnext();
-		while (first.getnext() != null) {
-			System.out.print(first.getdata() + ", ");
-			first = first.getnext();
 		}
-		System.out.print(", " + first.getdata() + "\n");
+		Node a = head;
+		System.out.print(head.getdata());
+		a = head.getnext();
+		while (a.getnext() != null) {
+			System.out.print(a.getdata() + ", ");
+			a = a.getnext();
+		}
+		System.out.print(", " + a.getdata() + "\n");
 	}
 }
