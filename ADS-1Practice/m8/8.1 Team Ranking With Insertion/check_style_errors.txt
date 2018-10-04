@@ -1,0 +1,23 @@
+Starting audit...
+[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m8\8.1 Team Ranking With Insertion\teamObjects.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m8\8.1 Team Ranking With Insertion\teamObjects.java:1: Missing a Javadoc comment. [JavadocType]
+[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m8\8.1 Team Ranking With Insertion\teamObjects.java:1:7: Name 'teamObjects' must match pattern '^[A-Z][a-zA-Z0-9]*$'. [TypeName]
+[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m8\8.1 Team Ranking With Insertion\teamObjects.java:2:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m8\8.1 Team Ranking With Insertion\teamObjects.java:2:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m8\8.1 Team Ranking With Insertion\teamObjects.java:3:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m8\8.1 Team Ranking With Insertion\teamObjects.java:4:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m8\8.1 Team Ranking With Insertion\teamObjects.java:5:46: '10' is a magic number. [MagicNumber]
+[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m8\8.1 Team Ranking With Insertion\teamObjects.java:11:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m8\8.1 Team Ranking With Insertion\teamObjects.java:11:37: Parameter t should be final. [FinalParameters]
+[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m8\8.1 Team Ranking With Insertion\teamObjects.java:17: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m8\8.1 Team Ranking With Insertion\teamObjects.java:35:27: Parameter team should be final. [FinalParameters]
+[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m8\8.1 Team Ranking With Insertion\teamObjects.java:35:48: Parameter i should be final. [FinalParameters]
+[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m8\8.1 Team Ranking With Insertion\teamObjects.java:35:55: Parameter j should be final. [FinalParameters]
+[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m8\8.1 Team Ranking With Insertion\teamObjects.java:38: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m8\8.1 Team Ranking With Insertion\teamObjects.java:42: Line is longer than 80 characters (found 138). [LineLength]
+[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m8\8.1 Team Ranking With Insertion\teamObjects.java:53: Line has trailing spaces. [RegexpSingleline]
+[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m8\8.1 Team Ranking With Insertion\teamObjects.java:68:26: Parameter arr should be final. [FinalParameters]
+[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m8\8.1 Team Ranking With Insertion\teamObjects.java:68:46: Parameter i should be final. [FinalParameters]
+[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m8\8.1 Team Ranking With Insertion\teamObjects.java:68:53: Parameter j should be final. [FinalParameters]
+Audit done.
+Checkstyle ends with 20 errors.
