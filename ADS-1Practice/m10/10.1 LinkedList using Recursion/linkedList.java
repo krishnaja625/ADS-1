@@ -79,6 +79,6 @@ class LinkedList {
 			System.out.print(a.getdata() + ", ");
 			a = a.getnext();
 		}
-		System.out.print(", " + a.getdata() + "\n");
+		System.out.print(a.getdata() + "\n");
 	}
 }
