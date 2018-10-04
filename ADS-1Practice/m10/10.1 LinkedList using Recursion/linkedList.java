@@ -64,10 +64,10 @@ class LinkedList {
 			System.out.println("");
 			return;
 		}
-		if (head.getnext() == null) {
+/*		if (head.getnext() == null) {
 			System.out.println(head.getdata());
 			return;
-		}
+		}*/
 		Node first = head;
 		System.out.print(head.getdata());
 		first = head.getnext();
