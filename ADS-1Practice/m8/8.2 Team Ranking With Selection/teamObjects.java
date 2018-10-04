@@ -62,7 +62,7 @@ class teamObjects {
 	 * hence in total iterations are N*(N-1) which is equals to N^2.
 	 * thus the time complexity is N^2
 	 */
-	public void InsertionSort() {
+	public void insertionSort() {
 		for (int i = 0; i < size - 1; i++) {
 			for (int j = i + 1; j > 0; j--) {
 				if (less(teamArray, j - 1, j)) {

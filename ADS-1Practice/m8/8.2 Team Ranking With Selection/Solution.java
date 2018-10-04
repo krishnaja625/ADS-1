@@ -30,7 +30,7 @@ class Solution {
              Integer.parseInt(tokens[t]));
                     to.addCountryTeams(cn);
         }
-        to.InsertionSort();
+        to.insertionSort();
         System.out.println(to.getNames());
     }
 }
