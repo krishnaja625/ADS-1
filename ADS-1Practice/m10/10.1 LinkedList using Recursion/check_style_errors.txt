@@ -1,0 +1,5 @@
+Starting audit...
+[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m10\10.1 LinkedList using Recursion\Solution.java:22: switch without "default" clause. [MissingSwitchDefault]
+[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m10\10.1 LinkedList using Recursion\Solution.java:24: Line is longer than 80 characters (found 89). [LineLength]
+Audit done.
+Checkstyle ends with 2 errors.
