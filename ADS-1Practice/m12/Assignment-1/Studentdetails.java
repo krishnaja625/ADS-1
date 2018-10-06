@@ -48,7 +48,8 @@ class Studentdetails {
 		int bcVacan = stuArray[0].bcVacan();
 		int scVacan = stuArray[0].scVacan();
 		int stVacan = stuArray[0].stVacan();
-		for (int i = 0; i < size; i++) {
+		int x = unresVacan + bcVacan + scVacan + stVacan;
+		for (int i = 0; i < x; i++) {
 		for (int m = 0; m < unresVacan; m++) {
 			str = "";
 			str = stuArray[i].getName() + "," + stuArray[i].getTotal() + ", " + stuArray[i].getcategory();
