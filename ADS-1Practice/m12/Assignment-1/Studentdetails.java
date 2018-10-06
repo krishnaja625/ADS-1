@@ -84,6 +84,6 @@ class Studentdetails {
 	 * @return     { description_of_the_return_value }
 	 */
 	boolean lessThan(final Student[] arr, final int i, final int j) {
-		return  arr[i].compareTo(arr[j]) > 0;
+		return  arr[i].compareTo(arr[j]) < 0;
 	}
 }
