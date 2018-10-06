@@ -40,18 +40,46 @@ All the student information seperated with commas respectively
 		return this.category;
 	}
 	public int compareTo(Student st) {
-		if (this.total < st.total) {
+		if (this.total > st.total) {
 			return 1;
 		}
-		if (this.total > st.total) {
+		if (this.total < st.total) {
 			return -1;
 		}
-		if (this.subject1 > st.subject1) {
+		if (this.subject3 > st.subject3) {
 			return 1;
 		}
-		if (this.subject1 < st.subject1) {
+		if (this.subject3 < st.subject3) {
+			return -1;
+		}
+		if (this.subject2 > st.subject2) {
+			return 1;
+		}
+		if (this.subject2 < st.subject2) {
+			return -1;
+		}
+		if (this.year > st.year) {
+			return 1;
+		}
+		if (this.year < st.year) {
+			return -1;
+		}
+		if (this.month > st.month) {
+			return 1;
+		}
+		if (this.month < st.month) {
+			return -1;
+		}
+		if (this.date > st.date) {
+			return 1;
+		}
+		if (this.date < st.date) {
 			return -1;
 		}
 		return 0;  
 	}
 }
+/*student who got more total marks will be given the priority
+if total marks are equal then student who got more marks in subject 3 will be given the priority. 
+if subject 3 marks are equal then student who got more marks in subject 2 will be given the priority. 
+if subject 2 marks are equal then younger student will be given priority.*/

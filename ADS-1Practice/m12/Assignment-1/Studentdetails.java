@@ -63,13 +63,15 @@ class Studentdetails {
 	 * hence in total iterations are N*(N-1) which is equals to N^2.
 	 * thus the time complexity is N^2
 	 */
-	public void insertionSort() {
+	public void selectionSort() {
 		for (int i = 0; i < size - 1; i++) {
-			for (int j = i + 1; j > 0; j--) {
-				if (less(stuArray, j - 1, j)) {
-					swaps(stuArray, j -1, j);
-				} 
+			int min = i;
+			for (int j = i + 1; j < size; j++) {
+				if (lessThan(stuArray, j, min)) {
+					min = j;
+				}
 			}
+			swaps(stuArray, i, min);
         }
 	}
 	/**
@@ -81,7 +83,7 @@ class Studentdetails {
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	public boolean less(Student[] arr, int i, int j) {
-		return  arr[i].compareTo(arr[j]) < 0;
+	boolean lessThan(final Student[] arr, final int i, final int j) {
+		return  arr[i].compareTo(arr[j]) > 0;
 	}
 }
