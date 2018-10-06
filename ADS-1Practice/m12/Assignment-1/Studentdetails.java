@@ -110,7 +110,7 @@ class Studentdetails {
 			sc++;
 			va++;
 			}
-		else if (stuArray[i].getcategory().equals("SC")&& st < stVacan) {
+		else if (stuArray[i].getcategory().equals("ST")&& st < stVacan) {
 			str = stuArray[i].getName() + "," + stuArray[i].getTotal() + "," + stuArray[i].getcategory();
 			System.out.println(str);
 			st++;
