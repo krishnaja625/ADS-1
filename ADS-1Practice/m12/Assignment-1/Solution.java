@@ -20,6 +20,7 @@ class Solution {
         sd.addStudent(st);
 
     }
+    sd.selectionSort();
     sd.print();
 
     }
