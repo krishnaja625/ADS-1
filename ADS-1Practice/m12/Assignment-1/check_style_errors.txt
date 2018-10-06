@@ -4,8 +4,13 @@ Starting audit...
 [ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m12\Assignment-1\Studentdetails.java:17:40: '30' is a magic number. [MagicNumber]
 [ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m12\Assignment-1\Studentdetails.java:35: Unused Javadoc tag. [JavadocMethod]
 [ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m12\Assignment-1\Studentdetails.java:41: Line is longer than 80 characters (found 118). [LineLength]
-[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m12\Assignment-1\Studentdetails.java:45:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m12\Assignment-1\Studentdetails.java:45:32: Parameter size1 should be final. [FinalParameters]
-[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m12\Assignment-1\Studentdetails.java:49: Line is longer than 80 characters (found 118). [LineLength]
+[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m12\Assignment-1\Studentdetails.java:45:17: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m12\Assignment-1\Studentdetails.java:54: Line is longer than 80 characters (found 118). [LineLength]
+[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m12\Assignment-1\Studentdetails.java:59:27: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m12\Assignment-1\Studentdetails.java:60: Line is longer than 80 characters (found 118). [LineLength]
+[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m12\Assignment-1\Studentdetails.java:66:27: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m12\Assignment-1\Studentdetails.java:67: Line is longer than 80 characters (found 118). [LineLength]
+[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m12\Assignment-1\Studentdetails.java:73:27: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m12\Assignment-1\Studentdetails.java:74: Line is longer than 80 characters (found 118). [LineLength]
 Audit done.
-Checkstyle ends with 8 errors.
+Checkstyle ends with 13 errors.

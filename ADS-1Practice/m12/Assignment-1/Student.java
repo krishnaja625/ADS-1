@@ -12,13 +12,18 @@ class Student implements Comparable<Student>{
 	int subject3;
 	int total;
 	String category;
+	int unresVacan;
+	int bcVacan;
+	int scVacan;
+	int stVacan;
      /*   Ajay,12-06-1993,32,33,11,76,Open
 
         Student Name, Date of birth, subject1 marks, subject2 marks, subject3 marks, Total marks, Reservation category
 All the student information seperated with commas respectively
 */
 	Student(String studentName, int date, int month,
-		int year, int subject1, int subject2, int subject3, int total, String category) {
+		int year, int subject1, int subject2, int subject3,
+		int total, String category, int unresVacan, int bcVacan, int scVacan, int stVacan) {
 		this.name = studentName;
 		this.date = date;
 		this.month = month;
@@ -28,6 +33,10 @@ All the student information seperated with commas respectively
 		this.subject3 = subject3;
 		this.total = total;
 		this.category = category;
+		this.unresVacan = unresVacan;
+		this.bcVacan = bcVacan;
+		this.scVacan = scVacan;
+		this.stVacan = stVacan;
 
 	}
 	public String getName() {
@@ -38,6 +47,18 @@ All the student information seperated with commas respectively
 	}
 	public String getcategory() {
 		return this.category;
+	}
+	public int unresVacan() {
+		return this.unresVacan;
+	}
+	public int bcVacan() {
+		return this.bcVacan;
+	}
+	public int scVacan() {
+		return this.scVacan;
+	}
+	public int stVacan() {
+		return this.stVacan;
 	}
 	public int compareTo(Student st) {
 		if (this.total > st.total) {
