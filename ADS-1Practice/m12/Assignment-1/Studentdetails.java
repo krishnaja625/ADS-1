@@ -14,7 +14,7 @@ class Studentdetails {
 	 * Constructs the object.
 	 */
 	Studentdetails() {
-		stuArray = new Student[10];
+		stuArray = new Student[30];
 		size = 0;
 	}
 	/**
