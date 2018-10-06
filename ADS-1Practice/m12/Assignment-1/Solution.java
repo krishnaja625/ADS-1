@@ -3,6 +3,10 @@ class Solution {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Studentdetails sd = new Studentdetails();
+        Studentdetails open = new Studentdetails();
+        Studentdetails bC = new Studentdetails();
+        Studentdetails sC = new Studentdetails();
+        Studentdetails sT = new Studentdetails();
         int inputs = sc.nextInt();
         int vacancy = sc.nextInt();
         int unresVacan = sc.nextInt();
@@ -18,10 +22,31 @@ class Solution {
             Integer.parseInt(details[3]), Integer.parseInt(details[4]),
          Integer.parseInt(details[5]), details[6]);
         sd.addStudent(st);
-
+        sd.selectionSort();
+        sd.print();
+        switch(details[6]) {
+            case "Open":
+            open.addStudent(st);
+            break;
+            case "BC":
+            bC.addStudent(st);
+            break;
+            case "SC":
+            sC.addStudent(st);
+            break;
+            case "ST":
+            sT.addStudent(st);
+            break;
+        }
+            open.selectionSort();
+            bC.selectionSort();
+            sC.selectionSort();
+            sT.selectionSort();
+            sd.finalprint(unresVacan);
+            
     }
-    sd.selectionSort();
-    sd.print();
+    
+    
 
     }
 }

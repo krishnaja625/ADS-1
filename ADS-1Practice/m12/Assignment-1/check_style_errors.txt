@@ -4,5 +4,8 @@ Starting audit...
 [ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m12\Assignment-1\Studentdetails.java:17:40: '30' is a magic number. [MagicNumber]
 [ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m12\Assignment-1\Studentdetails.java:35: Unused Javadoc tag. [JavadocMethod]
 [ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m12\Assignment-1\Studentdetails.java:41: Line is longer than 80 characters (found 118). [LineLength]
+[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m12\Assignment-1\Studentdetails.java:45:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m12\Assignment-1\Studentdetails.java:45:32: Parameter size1 should be final. [FinalParameters]
+[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m12\Assignment-1\Studentdetails.java:49: Line is longer than 80 characters (found 118). [LineLength]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 8 errors.

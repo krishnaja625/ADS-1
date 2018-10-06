@@ -42,6 +42,14 @@ class Studentdetails {
 			System.out.println(str);
 		}
 	}
+	public void finalprint(int size1) {
+		String str = "";
+		for (int i = 0; i < size1; i++) {
+			str = "";
+			str = stuArray[i].getName() + "," + stuArray[i].getTotal() + ", " + stuArray[i].getcategory();
+			System.out.println(str);
+		}
+	}
 /**
  * As there is a single line operation the time complexity is constant.
  * Time complexity = O(1)
