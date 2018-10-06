@@ -16,6 +16,7 @@ class Student implements Comparable<Student>{
 	int bcVacan;
 	int scVacan;
 	int stVacan;
+	int vacancy;
      /*   Ajay,12-06-1993,32,33,11,76,Open
 
         Student Name, Date of birth, subject1 marks, subject2 marks, subject3 marks, Total marks, Reservation category
@@ -23,7 +24,7 @@ All the student information seperated with commas respectively
 */
 	Student(String studentName, int date, int month,
 		int year, int subject1, int subject2, int subject3,
-		int total, String category, int unresVacan, int bcVacan, int scVacan, int stVacan) {
+		int total, String category, int vacancy, int unresVacan, int bcVacan, int scVacan, int stVacan) {
 		this.name = studentName;
 		this.date = date;
 		this.month = month;
@@ -37,6 +38,7 @@ All the student information seperated with commas respectively
 		this.bcVacan = bcVacan;
 		this.scVacan = scVacan;
 		this.stVacan = stVacan;
+		this.vacancy =vacancy;
 
 	}
 	public String getName() {
@@ -45,6 +47,10 @@ All the student information seperated with commas respectively
 	public int getTotal() {
 		return this.total;
 	}
+	public int vacancy() {
+		return this.vacancy;
+	}
+	
 	public String getcategory() {
 		return this.category;
 	}

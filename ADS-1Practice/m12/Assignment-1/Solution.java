@@ -16,7 +16,7 @@ class Solution {
         Student st = new Student(details[0], Integer.parseInt(dates[0]), Integer.parseInt(dates[1]),
             Integer.parseInt(dates[2]), Integer.parseInt(details[2]),
             Integer.parseInt(details[3]), Integer.parseInt(details[4]),
-         Integer.parseInt(details[5]), details[6], unresVacan, bcVacan, scVacan, stVacan);
+         Integer.parseInt(details[5]), details[6], vacancy, unresVacan, bcVacan, scVacan, stVacan);
         sd.addStudent(st);
     }
     sd.selectionSort();

@@ -48,6 +48,7 @@ class Studentdetails {
 		int bcVacan = stuArray[0].bcVacan();
 		int scVacan = stuArray[0].scVacan();
 		int stVacan = stuArray[0].stVacan();
+		int vacancy = stuArray[0].vacancy();
 		/*int x = unresVacan + bcVacan + scVacan + stVacan;*/
 	/*	for (int m = 0; m < unresVacan; m++) {
 			for(int i =0; i <size; i++) {
@@ -78,30 +79,37 @@ class Studentdetails {
 		int bc =0;
 		int st = 0;
 		int sc =0;
+		int va = 0;
+		if (va<=vacancy) {
 			for(int i =0; i <size; i++) {
 			str = "";
 			if(ur <= unresVacan) {
 			str = stuArray[i].getName() + "," + stuArray[i].getTotal() + ", " + stuArray[i].getcategory();
 			System.out.println(str);
 			ur++;
+			va++;
 		}
 		else if (stuArray[i].getcategory().equals("BC")&& bc <= bcVacan) {
 			str = stuArray[i].getName() + "," + stuArray[i].getTotal() + ", " + stuArray[i].getcategory();
 			System.out.println(str);
 			bc++;
+			va++;
 			}
 		else if (stuArray[i].getcategory().equals("SC") && sc <= scVacan) {
 			str = stuArray[i].getName() + "," + stuArray[i].getTotal() + ", " + stuArray[i].getcategory();
 			System.out.println(str);
 			sc++;
+			va++;
 			}
 		else if (stuArray[i].getcategory().equals("SC")&& st <= stVacan) {
 			str = stuArray[i].getName() + "," + stuArray[i].getTotal() + ", " + stuArray[i].getcategory();
 			System.out.println(str);
 			st++;
+			va++;
 			}
 	}
 	}
+}
 /**
  * As there is a single line operation the time complexity is constant.
  * Time complexity = O(1)
