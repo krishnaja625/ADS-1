@@ -49,17 +49,15 @@ class Studentdetails {
 		int scVacan = stuArray[0].scVacan();
 		int stVacan = stuArray[0].stVacan();
 		/*int x = unresVacan + bcVacan + scVacan + stVacan;*/
-		
+	/*	for (int m = 0; m < unresVacan; m++) {
 			for(int i =0; i <size; i++) {
-				for (int m = 0; m < unresVacan; m++) {
 			str = "";
 			str = stuArray[i].getName() + "," + stuArray[i].getTotal() + ", " + stuArray[i].getcategory();
 			System.out.println(str);
 		}
 		}
-		
+		for (int j = 0; j < bcVacan; j++) {
 			for(int i =0; i <size; i++) {
-				for (int j = 0; j < bcVacan; j++) {
 			str = "";
 			if(stuArray[i].getcategory().equals("BC")) {
 			str = stuArray[i].getName() + "," + stuArray[i].getTotal() + ", " + stuArray[i].getcategory();
@@ -67,25 +65,41 @@ class Studentdetails {
 			}
 		}
 		}
-		
+		for (int k = 0; k < scVacan; k++) {
 			for(int i =0; i <size; i++) {
-				for (int k = 0; k < scVacan; k++) {
 			str = "";
 			if(stuArray[i].getcategory().equals("SC")) {
 			str = stuArray[i].getName() + "," + stuArray[i].getTotal() + ", " + stuArray[i].getcategory();
 			System.out.println(str);
 			}
 		}
-		}
-		
+		}*/
+		int ur =0;
+		int bc =0;
+		int st = 0;
+		int sc =0;
 			for(int i =0; i <size; i++) {
-				for (int l = 0; l < stVacan; l++) {
 			str = "";
-			if(stuArray[i].getcategory().equals("ST")) {
+			if(ur <= unresVacan) {
 			str = stuArray[i].getName() + "," + stuArray[i].getTotal() + ", " + stuArray[i].getcategory();
 			System.out.println(str);
-			}
+			ur++;
 		}
+		else if (stuArray[i].getcategory().equals("BC")&& bc <= bcVacan) {
+			str = stuArray[i].getName() + "," + stuArray[i].getTotal() + ", " + stuArray[i].getcategory();
+			System.out.println(str);
+			bc++;
+			}
+		else if (stuArray[i].getcategory().equals("SC") && sc <= scVacan) {
+			str = stuArray[i].getName() + "," + stuArray[i].getTotal() + ", " + stuArray[i].getcategory();
+			System.out.println(str);
+			sc++;
+			}
+		else if (stuArray[i].getcategory().equals("SC")&& st <= stVacan) {
+			str = stuArray[i].getName() + "," + stuArray[i].getTotal() + ", " + stuArray[i].getcategory();
+			System.out.println(str);
+			st++;
+			}
 	}
 	}
 /**
