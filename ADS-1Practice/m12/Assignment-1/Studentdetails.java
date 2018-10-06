@@ -38,7 +38,7 @@ class Studentdetails {
 		String str = "";
 		for (int i = 0; i < size; i++) {
 			str = "";
-			str = stuArray[i].getName() + "," + stuArray[i].getTotal() + ", " + stuArray[i].getcategory();
+			str = stuArray[i].getName() + "," + stuArray[i].getTotal() + "," + stuArray[i].getcategory();
 			System.out.println(str);
 		}
 	}
@@ -84,7 +84,7 @@ class Studentdetails {
 			for(int i =0; i <size; i++) {
 			str = "";
 			if(ur < unresVacan) {
-			str = stuArray[i].getName() + "," + stuArray[i].getTotal() + ", " + stuArray[i].getcategory();
+			str = stuArray[i].getName() + "," + stuArray[i].getTotal() + "," + stuArray[i].getcategory();
 			System.out.println(str);
 			if(stuArray[i].getcategory().equals("BC"))
 				bc = 1;
@@ -96,19 +96,19 @@ class Studentdetails {
 			va++;
 		}
 		else if (stuArray[i].getcategory().equals("BC")&& bc < bcVacan) {
-			str = stuArray[i].getName() + "," + stuArray[i].getTotal() + ", " + stuArray[i].getcategory();
+			str = stuArray[i].getName() + "," + stuArray[i].getTotal() + "," + stuArray[i].getcategory();
 			System.out.println(str);
 			bc++;
 			va++;
 			}
 		else if (stuArray[i].getcategory().equals("SC") && sc < scVacan) {
-			str = stuArray[i].getName() + "," + stuArray[i].getTotal() + ", " + stuArray[i].getcategory();
+			str = stuArray[i].getName() + "," + stuArray[i].getTotal() + "," + stuArray[i].getcategory();
 			System.out.println(str);
 			sc++;
 			va++;
 			}
 		else if (stuArray[i].getcategory().equals("SC")&& st < stVacan) {
-			str = stuArray[i].getName() + "," + stuArray[i].getTotal() + ", " + stuArray[i].getcategory();
+			str = stuArray[i].getName() + "," + stuArray[i].getTotal() + "," + stuArray[i].getcategory();
 			System.out.println(str);
 			st++;
 			va++;
