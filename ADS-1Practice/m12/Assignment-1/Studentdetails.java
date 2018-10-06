@@ -86,6 +86,12 @@ class Studentdetails {
 			if(ur < unresVacan) {
 			str = stuArray[i].getName() + "," + stuArray[i].getTotal() + ", " + stuArray[i].getcategory();
 			System.out.println(str);
+			if(stuArray[i].getcategory().equals("BC"))
+				bc = 1;
+			if(stuArray[i].getcategory().equals("SC"))
+				sc = 1;
+			if(stuArray[i].getcategory().equals("ST"))
+				st = 1;
 			ur++;
 			va++;
 		}
