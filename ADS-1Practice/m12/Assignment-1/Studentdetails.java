@@ -80,7 +80,8 @@ class Studentdetails {
 		int st = 0;
 		int sc =0;
 		int va = 0;
-		if (va<=vacancy) {
+		int oc = 0;
+		if (va<vacancy) {
 			for(int i =0; i <size; i++) {
 			str = "";
 			if(ur < unresVacan) {
@@ -88,6 +89,8 @@ class Studentdetails {
 			System.out.println(str);
 			if(stuArray[i].getcategory().equals("BC"))
 				bc = 1;
+			if(stuArray[i].getcategory().equals("Open"))
+				oc = 1;
 			if(stuArray[i].getcategory().equals("SC"))
 				sc = 1;
 			if(stuArray[i].getcategory().equals("ST"))
