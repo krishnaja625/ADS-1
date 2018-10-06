@@ -53,12 +53,14 @@ class Studentdetails {
 			str = "";
 			str = stuArray[i].getName() + "," + stuArray[i].getTotal() + ", " + stuArray[i].getcategory();
 			System.out.println(str);
+			i++;
 		}
 		for (int j = 0; j < bcVacan; j++) {
 			str = "";
 			if(stuArray[i].getcategory().equals("BC")) {
 			str = stuArray[i].getName() + "," + stuArray[i].getTotal() + ", " + stuArray[i].getcategory();
 			System.out.println(str);
+			i++;
 		}
 		}
 		for (int k = 0; k < scVacan; k++) {
@@ -66,6 +68,7 @@ class Studentdetails {
 			if(stuArray[i].getcategory().equals("SC")) {
 			str = stuArray[i].getName() + "," + stuArray[i].getTotal() + ", " + stuArray[i].getcategory();
 			System.out.println(str);
+			i++;
 		}
 	}
 		for (int l = 0; l < stVacan; l++) {
@@ -73,6 +76,7 @@ class Studentdetails {
 			if(stuArray[i].getcategory().equals("ST")) {
 			str = stuArray[i].getName() + "," + stuArray[i].getTotal() + ", " + stuArray[i].getcategory();
 			System.out.println(str);
+			i++;
 		}
 	}
 	}
