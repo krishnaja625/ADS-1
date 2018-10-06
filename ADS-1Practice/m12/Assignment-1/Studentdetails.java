@@ -88,13 +88,13 @@ class Studentdetails {
 			str = stuArray[i].getName() + "," + stuArray[i].getTotal() + "," + stuArray[i].getcategory();
 			System.out.println(str);
 			if(stuArray[i].getcategory().equals("BC"))
-				bc = 1;
+				bc++;
 			if(stuArray[i].getcategory().equals("Open"))
-				oc = 1;
+				oc++;
 			if(stuArray[i].getcategory().equals("SC"))
-				sc = 1;
+				sc++;
 			if(stuArray[i].getcategory().equals("ST"))
-				st = 1;
+				st++;
 			ur++;
 			va++;
 		}
