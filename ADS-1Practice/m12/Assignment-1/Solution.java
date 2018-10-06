@@ -24,25 +24,7 @@ class Solution {
         sd.addStudent(st);
         sd.selectionSort();
         sd.print();
-        switch(details[6]) {
-            case "Open":
-            open.addStudent(st);
-            break;
-            case "BC":
-            bC.addStudent(st);
-            break;
-            case "SC":
-            sC.addStudent(st);
-            break;
-            case "ST":
-            sT.addStudent(st);
-            break;
-        }
-            open.selectionSort();
-            bC.selectionSort();
-            sC.selectionSort();
-            sT.selectionSort();
-            sd.finalprint(unresVacan);
+        
             
     }
     
