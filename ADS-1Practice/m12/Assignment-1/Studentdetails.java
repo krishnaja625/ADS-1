@@ -80,28 +80,28 @@ class Studentdetails {
 		int st = 0;
 		int sc =0;
 		int va = 0;
-		if (va<=vacancy) {
+		if (va<vacancy) {
 			for(int i =0; i <size; i++) {
 			str = "";
-			if(ur <= unresVacan) {
+			if(ur < unresVacan) {
 			str = stuArray[i].getName() + "," + stuArray[i].getTotal() + ", " + stuArray[i].getcategory();
 			System.out.println(str);
 			ur++;
 			va++;
 		}
-		else if (stuArray[i].getcategory().equals("BC")&& bc <= bcVacan) {
+		else if (stuArray[i].getcategory().equals("BC")&& bc < bcVacan) {
 			str = stuArray[i].getName() + "," + stuArray[i].getTotal() + ", " + stuArray[i].getcategory();
 			System.out.println(str);
 			bc++;
 			va++;
 			}
-		else if (stuArray[i].getcategory().equals("SC") && sc <= scVacan) {
+		else if (stuArray[i].getcategory().equals("SC") && sc < scVacan) {
 			str = stuArray[i].getName() + "," + stuArray[i].getTotal() + ", " + stuArray[i].getcategory();
 			System.out.println(str);
 			sc++;
 			va++;
 			}
-		else if (stuArray[i].getcategory().equals("SC")&& st <= stVacan) {
+		else if (stuArray[i].getcategory().equals("SC")&& st < stVacan) {
 			str = stuArray[i].getName() + "," + stuArray[i].getTotal() + ", " + stuArray[i].getcategory();
 			System.out.println(str);
 			st++;
