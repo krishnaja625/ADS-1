@@ -63,13 +63,15 @@ class Studentdetails {
 	 * hence in total iterations are N*(N-1) which is equals to N^2.
 	 * thus the time complexity is N^2
 	 */
-	public void insertionSort() {
+	public void selectionSort() {
 		for (int i = 0; i < size - 1; i++) {
-			for (int j = i + 1; j > 0; j--) {
-				if (less(stuArray, j - 1, j)) {
-					swaps(stuArray, j -1, j);
-				} 
+			int min = i;
+			for (int j = i + 1; j < size; j++) {
+				if (lessThan(stuArray, j, min)) {
+					min = j;
+				}
 			}
+			swaps(stuArray, i, min);
         }
 	}
 	/**
@@ -81,40 +83,7 @@ class Studentdetails {
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	public boolean less(Student[] arr, int i, int j) {
-		return  arr[i].compareTo(arr[j]) < 0;
+	boolean lessThan(final Student[] arr, final int i, final int j) {
+		return  arr[i].compareTo(arr[j]) > 0;
 	}
 }
-// 	/**
-// 	 * the first for loop iterates for N times,
-// 	 * the second for loop is independent of 1st for
-// 	 * loop and iterates for N-1 times calls the less
-// 	 * method whose time complexity is 1.
-// 	 * the swap method also takes constant time.
-// 	 * hence in total iterations are N*(N-1) which is equals to N^2.
-// 	 * thus the time complexity is N^2
-// 	 */
-// 	public void selectionSort() {
-// 		for (int i = 0; i < size - 1; i++) {
-// 			int min = i;
-// 			for (int j = i + 1; j < size; j++) {
-// 				if (lessThan(stuArray, j, min)) {
-// 					min = j;
-// 				}
-// 			}
-// 			swaps(stuArray, i, min);
-//         }
-// 	}
-// 	/**
-// 	 * Time complexity is constant.
-// 	 * Time complexity = O(1)
-// 	 * @param      arr   The arr
-// 	 * @param      i     { parameter_description }
-// 	 * @param      j     { parameter_description }
-// 	 *
-// 	 * @return     { description_of_the_return_value }
-// 	 */
-// 	boolean lessThan(final Student[] arr, final int i, final int j) {
-// 		return  arr[i].compareTo(arr[j]) < 0;
-// 	}
-// }
