@@ -3,10 +3,5 @@ Starting audit...
 [ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m8\8.1 Team Ranking With Insertion\teamObjects.java:4:7: Name 'teamObjects' must match pattern '^[A-Z][a-zA-Z0-9]*$'. [TypeName]
 [ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m8\8.1 Team Ranking With Insertion\teamObjects.java:5:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m8\8.1 Team Ranking With Insertion\teamObjects.java:17:46: '10' is a magic number. [MagicNumber]
-[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m8\8.1 Team Ranking With Insertion\teamObjects.java:23:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m8\8.1 Team Ranking With Insertion\teamObjects.java:29: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m8\8.1 Team Ranking With Insertion\teamObjects.java:50: Line has trailing spaces. [RegexpSingleline]
-[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m8\8.1 Team Ranking With Insertion\teamObjects.java:54: Line is longer than 80 characters (found 138). [LineLength]
-[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m8\8.1 Team Ranking With Insertion\teamObjects.java:65: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 9 errors.
+Checkstyle ends with 4 errors.
