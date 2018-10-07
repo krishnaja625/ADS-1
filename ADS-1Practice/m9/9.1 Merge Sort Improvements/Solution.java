@@ -92,18 +92,18 @@ class Merge {
         final int lo, final int hi) {
         for (int i = lo; i <= hi; i++) {
             for (int j = i; j > lo && less(a[j], a[j - 1]); j--) {
-                exch(a, j, j - 1);
+                swaps(a, j, j - 1);
             }
         }
     }
     /**
-     * {Method to exchange two elements in the array}.
+     * {Method to swapsange two elements in the array}.
      * Time complexity of this method is O(N).
      * @param      a     {Array of object}
      * @param      i     {Integer i}
      * @param      j     {Integer j}
      */
-    public void exch(final Comparable[] a,
+    public void swaps(final Comparable[] a,
         final int i, final int j) {
         Comparable swap = a[i];
         a[i] = a[j];
