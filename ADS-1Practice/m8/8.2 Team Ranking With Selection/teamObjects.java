@@ -1,7 +1,7 @@
 /**
  * Class for team objects.
  */
-class teamobjects {
+class Team {
     /**
      * teamArray is private.
      */
@@ -13,7 +13,7 @@ class teamobjects {
     /**
      * Constructs the object.
      */
-    teamobjects() {
+    Team() {
         final int k = 10;
         teamArray = new CountryTeams[k];
         size = 0;
