@@ -2,18 +2,18 @@
  * Class for country teams details.
  * This is to 
  */
-class CountryTeams implements Comparable<CountryTeams>{
+class countryTeams implements Comparable<countryTeams>{
 	String countryname;
 	int wins;
 	int losses;
 	int draws;
-	CountryTeams(String name, int win, int loss, int draw) {
+	countryTeams(String name, int win, int loss, int draw) {
 		countryname = name;
 		wins = win;
 		losses = loss;
 		draws = draw;
 	}
-	public int compareTo(CountryTeams ct) {
+	public int compareTo(countryTeams ct) {
 		if (this.wins > ct.wins) {
 			return 1;
 		}

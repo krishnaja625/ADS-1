@@ -5,7 +5,7 @@ class teamObjects {
 	/**
 	 * teamArray is private.
 	 */
-	private CountryTeams[] teamArray;
+	private countryTeams[] teamArray;
 	/**
 	 * size is private variable.
 	 */
@@ -14,7 +14,7 @@ class teamObjects {
 	 * Constructs the object.
 	 */
 	teamObjects() {
-		teamArray = new CountryTeams[10];
+		teamArray = new countryTeams[10];
 		size = 0;
 	}
 	/**
@@ -24,7 +24,7 @@ class teamObjects {
 	 *
 	 * @param      t     { parameter_description }
 	 */
-	public void addCountryTeams(final CountryTeams t) {
+	public void addcountryTeams(final countryTeams t) {
 		teamArray[size++] = t;
 	}
 	/**
@@ -48,8 +48,8 @@ class teamObjects {
  * @param      i     { parameter_description }
  * @param      j     { parameter_description }
  */
-	public void swaps(final CountryTeams[] team, final int i, final int j) {
-		CountryTeams ct = teamArray[j];
+	public void swaps(final countryTeams[] team, final int i, final int j) {
+		countryTeams ct = teamArray[j];
 		teamArray[j] = teamArray[i];
 		teamArray[i] = ct;
 	}
@@ -82,7 +82,7 @@ class teamObjects {
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	boolean lessThan(final CountryTeams[] arr, final int i, final int j) {
+	boolean lessThan(final countryTeams[] arr, final int i, final int j) {
 		return  arr[i].compareTo(arr[j]) > 0;
 	}
 }

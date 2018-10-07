@@ -24,11 +24,11 @@ class Solution {
         while (sc.hasNext()) {
         String line = sc.nextLine();
         String[] tokens = line.split(",");
-        CountryTeams cn = new CountryTeams(
+        countryTeams cn = new countryTeams(
             tokens[0], Integer.parseInt(tokens[1]),
             Integer.parseInt(tokens[2]),
              Integer.parseInt(tokens[t]));
-                    to.addCountryTeams(cn);
+                    to.addcountryTeams(cn);
         }
         to.selectionSort();
         System.out.println(to.getNames());
