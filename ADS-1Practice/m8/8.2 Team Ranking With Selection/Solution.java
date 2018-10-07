@@ -19,7 +19,7 @@ class Solution {
      */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
-        teamObjects to = new teamObjects();
+        teamobjects to = new teamobjects();
         final int t = 3;
         while (sc.hasNext()) {
         String line = sc.nextLine();
