@@ -7,7 +7,7 @@ class CountryTeams implements Comparable<CountryTeams>{
 	int wins;
 	int losses;
 	int draws;
-	CountryTeams(String name, int win, int loss, int draw) {
+	CountryTeams(final String name, final int win, final int loss, final int draw) {
 		countryname = name;
 		wins = win;
 		losses = loss;

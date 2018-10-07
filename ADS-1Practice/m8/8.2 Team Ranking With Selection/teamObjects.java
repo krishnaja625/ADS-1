@@ -80,7 +80,7 @@ class teamObjects {
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	public boolean less(CountryTeams[] arr, int i, int j) {
+	public boolean less(final CountryTeams[] arr, final int i, final int j) {
 		return  arr[i].compareTo(arr[j]) < 0;
 	}
 }
