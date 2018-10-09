@@ -92,7 +92,7 @@ class Studentdetails {
         else if (va < vacancy) {
             str = stuArray[i].getName() + "," + stuArray[i].getTotal() + "," + stuArray[i].getcategory();
             System.out.println(str);
-            va++;
+            /*va++;*/
         }
     }
     }
