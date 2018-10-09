@@ -73,8 +73,8 @@ public final class Solution {
             }
             break;
         case "Integer":
-            int n1 = Integer.parseInt(sc.nextLine());
-            for (int i = 0; i < n1; i++) {
+            int num1 = Integer.parseInt(sc.nextLine());
+            for (int i = 0; i < num1; i++) {
                 String[] types = sc.nextLine().split(",");
                 Integer[] elementInt = new Integer[types.length];
                 for (int j = 0; j < types.length; j++) {
@@ -86,8 +86,8 @@ public final class Solution {
             }
             break;
         case "Double":
-            int n2 = Integer.parseInt(sc.nextLine());
-            for (int i = 0; i < n2; i++) {
+            int num2 = Integer.parseInt(sc.nextLine());
+            for (int i = 0; i < num2; i++) {
                 String[] types = sc.nextLine().split(",");
                 Double[] elementDouble = new Double[types.length];
                 for (int j = 0; j < types.length; j++) {
@@ -99,8 +99,8 @@ public final class Solution {
             }
             break;
         case "Float":
-            int n3 = Integer.parseInt(sc.nextLine());
-            for (int i = 0; i < n3; i++) {
+            int num3 = Integer.parseInt(sc.nextLine());
+            for (int i = 0; i < num3; i++) {
                 String str = sc.nextLine();
                 if (str.equals("")) {
                     System.out.println("false");
