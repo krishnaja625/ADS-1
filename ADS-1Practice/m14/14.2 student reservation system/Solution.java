@@ -22,7 +22,7 @@ public final class Solution {
         final int six = 6;
         int noofstudents = Integer.parseInt(sc.nextLine());
         int noofvacancies = Integer.parseInt(sc.nextLine());
-        int noofunreversedcat = Integer.parseInt(sc.nextLine());
+        int unresv = Integer.parseInt(sc.nextLine());
         int noofbccat = Integer.parseInt(sc.nextLine());
         int noofsccat = Integer.parseInt(sc.nextLine());
         int noofstcat = Integer.parseInt(sc.nextLine());
@@ -50,16 +50,16 @@ public final class Solution {
         System.out.println();
         int cnt = 0;
         for (int i = 0; i < noofstudents; i++) {
-            if (noofunreversedcat == 0) {
+            if (unresv == 0) {
                 break;
             }
             System.out.println(s.show(i));
             noofvacancies--;
-            noofunreversedcat--;
+            unresv--;
             cnt++;
         }
         StudentInfo[] reservstu = new StudentInfo[noofvacancies
-        - noofunreversedcat];
+        - unresv];
         int sizee = 0;
         for (int i = cnt; i < noofstudents; i++) {
             if (noofbccat == 0) {
