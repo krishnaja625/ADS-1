@@ -5,7 +5,7 @@ class Student implements Comparable<Student> {
     /**
      * student name contains name of student.
      */
-    private String studentName;
+    private String names;
     /**
      * dob contains date of birth.
      */
@@ -59,7 +59,7 @@ class Student implements Comparable<Student> {
      */
     Student(final String name, final String dob1, final int sub1,
         final int sub2, final int sub3, final int tot, final String res) {
-        this.studentName = name;
+        this.names = name;
         this.dob = dob1;
         this.ndob = dob1.split("-");
         this.date = Integer.parseInt(ndob[0]);
@@ -77,7 +77,7 @@ class Student implements Comparable<Student> {
      * @return name.
      */
     public String getName() {
-        return this.studentName;
+        return this.names;
     }
     /**
      * get total marks.
