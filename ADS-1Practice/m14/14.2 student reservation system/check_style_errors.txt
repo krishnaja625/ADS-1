@@ -1,7 +1,4 @@
 Starting audit...
-[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m14\14.2 student reservation system\Studentmerit.java:8:19: Variable 'arr' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m14\14.2 student reservation system\Studentmerit.java:12:9: Variable 'size' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m14\14.2 student reservation system\Studentmerit.java:42:35: 'arr' hides a field. [HiddenField]
-[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m14\14.2 student reservation system\Studentmerit.java:68:38: 'arr' hides a field. [HiddenField]
+[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m14\14.2 student reservation system\Student.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 4 errors.
+Checkstyle ends with 1 errors.

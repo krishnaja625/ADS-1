@@ -1,114 +1,38 @@
 import java.util.Scanner;
-import java.util.Arrays;
-import java.util.Collections;
 /**
- * Class for solution.
+ * Solution class contains main method.
  */
 public final class Solution {
     /**
-     * Constructs the object.
+     * default constructor.
      */
     private Solution() {
     }
     /**
-     * main method to drive the program.
-     * @param      args  The arguments
+     * main method is used to handle input and outputs.
+     *
+     * @param args commandline arguments.
      */
     public static void main(final String[] args) {
-        Scanner sc = new Scanner(System.in);
-        final int three = 3;
-        final int four = 4;
-        final int five = 5;
-        final int six = 6;
-        int noofstudents = Integer.parseInt(sc.nextLine());
-        int noofvacancies = Integer.parseInt(sc.nextLine());
-        int unresv = Integer.parseInt(sc.nextLine());
-        int noofbccat = Integer.parseInt(sc.nextLine());
-        int noofsccat = Integer.parseInt(sc.nextLine());
-        int noofstcat = Integer.parseInt(sc.nextLine());
-        int n = noofstudents;
-        Studentmerit s = new Studentmerit(noofstudents);
-        while (n != 0) {
-            String[] arr = sc.nextLine().split(",");
-            int year = Integer.parseInt(
-            arr[1].split("-")[2]);
-            int month = Integer.parseInt(
-            arr[1].split("-")[1]);
-            int date = Integer.parseInt(
-            arr[1].split("-")[0]);
-            s.add(new StudentInfo(arr[0], year, month,
-            date, Integer.parseInt(arr[2]),
-            Integer.parseInt(arr[three]),
-            Integer.parseInt(arr[four]),
-            Integer.parseInt(arr[five]), arr[six]));
-            n--;
+        Scanner scan = new Scanner(System.in);
+        int qualified = Integer.parseInt(scan.nextLine());
+        int vacancies = Integer.parseInt(scan.nextLine());
+        int unreserved = Integer.parseInt(scan.nextLine());
+        int bcvacancies = Integer.parseInt(scan.nextLine());
+        int scvacancies = Integer.parseInt(scan.nextLine());
+        int stvancancies = Integer.parseInt(scan.nextLine());
+        Selection sel = new Selection();
+        while (scan.hasNext()) {
+            String[] line = scan.nextLine().split(",");
+            Student s = new Student(line[0], line[1],
+                Integer.parseInt(line[2]), Integer.parseInt(line[2 + 1]),
+                Integer.parseInt(line[2 + 2]), Integer.parseInt(
+                    line[2 + 2 + 1]), line[2 + 2 + 2]);
+            sel.add(s);
         }
-        s.sort();
-        for (int i = 0; i < noofstudents; i++) {
-            System.out.println(s.show(i));
-        }
+        System.out.println(sel.sort());
         System.out.println();
-        int cnt = 0;
-        for (int i = 0; i < noofstudents; i++) {
-            if (unresv == 0) {
-                break;
-            }
-            System.out.println(s.show(i));
-            noofvacancies--;
-            unresv--;
-            cnt++;
-        }
-        StudentInfo[] reservstu = new StudentInfo[noofvacancies
-        - unresv];
-        int sizee = 0;
-        for (int i = cnt; i < noofstudents; i++) {
-            if (noofbccat == 0) {
-                break;
-            }
-            if (s.arr[i].reservationcat.
-                    equals("BC")) {
-                reservstu[sizee++] = s.show(i);
-                noofvacancies--;
-                noofbccat--;
-            }
-        }
-        for (int i = cnt; i < noofstudents; i++) {
-            if (noofstcat == 0) {
-                break;
-            }
-            if (s.arr[i].reservationcat.
-                    equals("ST")) {
-                reservstu[sizee++] = s.show(i);
-                noofvacancies--;
-                noofstcat--;
-            }
-        }
-        for (int i = cnt; i < noofstudents; i++) {
-            if (noofsccat == 0) {
-                break;
-            }
-            if (s.arr[i].reservationcat.
-                    equals("SC")) {
-                reservstu[sizee++] = s.show(i);
-                noofvacancies--;
-                noofsccat--;
-            }
-        }
-        for (int i = cnt; i < noofstudents; i++) {
-            if (noofvacancies == 0) {
-                break;
-            }
-            if (s.arr[i].reservationcat.
-                    equals("Open")) {
-                reservstu[sizee++] = s.show(i);
-                noofvacancies--;
-            }
-        }
-        Arrays.sort(reservstu,
-                    Collections.reverseOrder());
-        for (StudentInfo stuu : reservstu) {
-            System.out.println(stuu);
-        }
+        System.out.println(sel.sort1(
+            vacancies, unreserved, bcvacancies, scvacancies, stvancancies));
     }
 }
-
