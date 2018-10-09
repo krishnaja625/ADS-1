@@ -49,32 +49,6 @@ class Studentdetails {
 		int scVacan = stuArray[0].scVacan();
 		int stVacan = stuArray[0].stVacan();
 		int vacancy = stuArray[0].vacancy();
-		/*int x = unresVacan + bcVacan + scVacan + stVacan;*/
-	/*	for (int m = 0; m < unresVacan; m++) {
-			for(int i =0; i <size; i++) {
-			str = "";
-			str = stuArray[i].getName() + "," + stuArray[i].getTotal() + ", " + stuArray[i].getcategory();
-			System.out.println(str);
-		}
-		}
-		for (int j = 0; j < bcVacan; j++) {
-			for(int i =0; i <size; i++) {
-			str = "";
-			if(stuArray[i].getcategory().equals("BC")) {
-			str = stuArray[i].getName() + "," + stuArray[i].getTotal() + ", " + stuArray[i].getcategory();
-			System.out.println(str);
-			}
-		}
-		}
-		for (int k = 0; k < scVacan; k++) {
-			for(int i =0; i <size; i++) {
-			str = "";
-			if(stuArray[i].getcategory().equals("SC")) {
-			str = stuArray[i].getName() + "," + stuArray[i].getTotal() + ", " + stuArray[i].getcategory();
-			System.out.println(str);
-			}
-		}
-		}*/
 		int ur =0;
 		int bc =0;
 		int st = 0;

@@ -17,11 +17,6 @@ class Student implements Comparable<Student>{
 	int scVacan;
 	int stVacan;
 	int vacancy;
-     /*   Ajay,12-06-1993,32,33,11,76,Open
-
-        Student Name, Date of birth, subject1 marks, subject2 marks, subject3 marks, Total marks, Reservation category
-All the student information seperated with commas respectively
-*/
 	Student(String studentName, int date, int month,
 		int year, int subject1, int subject2, int subject3,
 		int total, String category, int vacancy, int unresVacan, int bcVacan, int scVacan, int stVacan) {
@@ -106,7 +101,3 @@ All the student information seperated with commas respectively
 		return 0;  
 	}
 }
-/*student who got more total marks will be given the priority
-if total marks are equal then student who got more marks in subject 3 will be given the priority. 
-if subject 3 marks are equal then student who got more marks in subject 2 will be given the priority. 
-if subject 2 marks are equal then younger student will be given priority.*/
