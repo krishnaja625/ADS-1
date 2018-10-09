@@ -15,6 +15,10 @@ class Solution {
         int bcVacan = sc.nextInt();
         int scVacan = sc.nextInt();
         int stVacan = sc.nextInt();
+        final int thr = 3;
+        final int fo = 4;
+        final int fi = 5;
+        final int six = 6;
         sc.nextLine();
         while (sc.hasNext()) {
             String[] details = sc.nextLine().split(",");
@@ -22,8 +26,8 @@ class Solution {
             Student st = new Student(details[0], Integer.parseInt(dates[0]),
              Integer.parseInt(dates[1]),
                 Integer.parseInt(dates[2]), Integer.parseInt(details[2]),
-                Integer.parseInt(details[3]), Integer.parseInt(details[4]),
-             Integer.parseInt(details[5]), details[6], vacancy,
+                Integer.parseInt(details[thr]), Integer.parseInt(details[fo]),
+             Integer.parseInt(details[fi]), details[six], vacancy,
              unresVacan, bcVacan, scVacan, stVacan);
             sd.addStudent(st);
         }
