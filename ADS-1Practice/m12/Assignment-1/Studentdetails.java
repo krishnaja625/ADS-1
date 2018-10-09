@@ -89,7 +89,7 @@ class Studentdetails {
             st++;
             va++;
             }
-        else if (va < vacancy) {
+        else if (va < vacancy-1) {
             str = stuArray[i].getName() + "," + stuArray[i].getTotal() + "," + stuArray[i].getcategory();
             System.out.println(str);
             va++;
