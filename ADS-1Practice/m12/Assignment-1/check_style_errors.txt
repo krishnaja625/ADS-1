@@ -6,6 +6,8 @@ Starting audit...
 [ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m12\Assignment-1\Studentdetails.java:51:17: '=' is not followed by whitespace. [WhitespaceAround]
 [ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m12\Assignment-1\Studentdetails.java:52:17: '=' is not followed by whitespace. [WhitespaceAround]
 [ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m12\Assignment-1\Studentdetails.java:54:17: '=' is not followed by whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m12\Assignment-1\Studentdetails.java:57:15: '<=' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m12\Assignment-1\Studentdetails.java:57:17: '<=' is not followed by whitespace. [WhitespaceAround]
 [ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m12\Assignment-1\Studentdetails.java:58:16: 'for' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m12\Assignment-1\Studentdetails.java:58:24: '=' is not followed by whitespace. [WhitespaceAround]
 [ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m12\Assignment-1\Studentdetails.java:58:30: '<' is not followed by whitespace. [WhitespaceAround]
@@ -22,4 +24,4 @@ Starting audit...
 [ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m12\Assignment-1\Studentdetails.java:91:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
 [ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m12\Assignment-1\Studentdetails.java:93: Line is longer than 80 characters (found 105). [LineLength]
 Audit done.
-Checkstyle ends with 22 errors.
+Checkstyle ends with 24 errors.
