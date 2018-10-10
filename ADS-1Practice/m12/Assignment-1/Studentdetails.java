@@ -54,20 +54,20 @@ class Studentdetails {
         int sc =0;
         int va = 0;
         int oc = 0;
-        if (va<=vacancy) {
+        if (va<vacancy) {
             for(int i =0; i <size; i++) {
             str = "";
             if(ur < unresVacan) {
             str = stuArray[i].getName() + "," + stuArray[i].getTotal() + "," + stuArray[i].getcategory();
             System.out.println(str);
-/*            if(stuArray[i].getcategory().equals("BC"))
+            if(stuArray[i].getcategory().equals("BC"))
                 bc++;
             if(stuArray[i].getcategory().equals("Open"))
                 oc++;
             if(stuArray[i].getcategory().equals("SC"))
                 sc++;
             if(stuArray[i].getcategory().equals("ST"))
-                st++;*/
+                st++;
             ur++;
             va++;
         }
@@ -89,11 +89,11 @@ class Studentdetails {
             st++;
             va++;
             }
-/*        else if (va < vacancy-1) {
+        else if (va < vacancy-1) {
             str = stuArray[i].getName() + "," + stuArray[i].getTotal() + "," + stuArray[i].getcategory();
             System.out.println(str);
             va++;
-        }*/
+        }
     }
     }
 }
