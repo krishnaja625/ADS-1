@@ -35,9 +35,10 @@ final class Solution {
             }
             System.out.println();
             // System.out.println(Arrays.toString(strmin));
-            Stocks[] strmax = new Stocks[5];
+            String[] strmax = new String[5];
             for(int z = 0; z < 5; z++) {
-                strmax[z] = maxpq.delMax();
+                // strmax[z] = maxpq.delMax();
+                // System.out.println(maxpq.delMax().getName());
                 System.out.println(maxpq.delMax());
             }
             System.out.println();
