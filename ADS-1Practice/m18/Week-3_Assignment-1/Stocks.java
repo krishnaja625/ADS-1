@@ -23,14 +23,14 @@ class Stocks implements Comparable<Stocks> {
         else if( this.perchange < that.perchange) {
         	return 1;
         }
-/*        if(this.name.compareTo(that.name) < 0) {
+        if(this.getName().compareTo(that.getName()) < 0) {
         	return -1;
         }
-        if( this.name.compareTo(that.name) > 0) {
+        if(this.getName().compareTo(that.getName()) > 0) {
         	return 1;
-        }*/
+        }
         else{
-        return this.getName().compareTo(that.getName());
+        return this.getName().compareTo(this.getName());
     }
 	}
 }
