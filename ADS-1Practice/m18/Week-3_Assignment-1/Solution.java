@@ -15,7 +15,6 @@ final class Solution {
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
-        Heaping obj = new Heaping();
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         for (int j = 0; j < 6; j++){
@@ -36,6 +35,7 @@ final class Solution {
             String[] strmax = new String[5];
             for(int z = 0; z < 5; z++) {
                 // strmax[z] = maxpq.delMax();
+                System.out.println(maxpq.delMax().getName());
             }
         }
     }
