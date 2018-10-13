@@ -27,10 +27,11 @@ final class Solution {
                 minpq.insert(st);
                 maxpq.insert(st);
             }
-            String[] strmin = new String[5];
+            Stocks[] strmin = new Stocks[5];
             for(int z = 0; z < 5; z++) {
-             System.out.println(minpq.delMin());
-               /* strmin[z] = minpq.delMin();*/
+             strmin[z] = minpq.delMin();
+             System.out.println(strmin[z]);
+            // Symboltable stable = new Symboltable()
             }
             System.out.println();
             // System.out.println(Arrays.toString(strmin));
