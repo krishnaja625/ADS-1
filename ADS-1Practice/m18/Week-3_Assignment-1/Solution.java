@@ -34,9 +34,11 @@ final class Solution {
             // Symboltable stable = new Symboltable()
             }
             System.out.println();
-            Stocks[] strmax = new Stocks[5];
+            // System.out.println(Arrays.toString(strmin));
+            String[] strmax = new String[5];
             for(int z = 0; z < 5; z++) {
-                strmax[z] = maxpq.delMax();
+                // strmax[z] = maxpq.delMax();
+                // System.out.println(maxpq.delMax().getName());
                 System.out.println(maxpq.delMax());
             }
             System.out.println();
