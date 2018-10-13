@@ -29,14 +29,15 @@ final class Solution {
             }
             String[] strmin = new String[5];
             for(int z = 0; z < 5; z++) {
-             System.out.println(minpq.delMin().getName());
+             System.out.println(minpq.delMin());
                /* strmin[z] = minpq.delMin();*/
             }
             // System.out.println(Arrays.toString(strmin));
             String[] strmax = new String[5];
             for(int z = 0; z < 5; z++) {
                 // strmax[z] = maxpq.delMax();
-                System.out.println(maxpq.delMax().getName());
+                // System.out.println(maxpq.delMax().getName());
+                System.out.println(maxpq.delMax());
             }
         }
     }
