@@ -30,7 +30,7 @@ class Stocks implements Comparable<Stocks> {
         	return 1;
         }*/
         else{
-        return this.getName().compareTo(this.getName());
+        return this.getName().compareTo(that.getName());
     }
 	}
 }
