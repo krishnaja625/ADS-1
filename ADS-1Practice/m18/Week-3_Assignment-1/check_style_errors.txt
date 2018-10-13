@@ -1,0 +1,4 @@
+Starting audit...
+[ERROR] C:\Users\mathew spurgeon\Desktop\ADS-1\ADS-1Practice\m18\Week-3_Assignment-1\Symboltable.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+Audit done.
+Checkstyle ends with 1 errors.
