@@ -72,8 +72,66 @@ Sanofi India 0.21
 Tasty Bite Eat 0.23
 WABCO India 0.33
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
-	at Solution.main(Solution.java:25)
+Merck Ltd
+ICRA
+Schaeffler India
+TTK Prestige
+Bharat Rasayan
+Bosch
+Abbott India
+MRF
+Oracle Fin
+Bajaj Finserv
+Merck Ltd
+Bajaj Finserv
+ICRA
+Schaeffler India
+Nestle India
+Honeywell Auto
+TTK Prestige
+WABCO India
+Eicher Motors
+GSK Cons Health
+Tasty Bite Eat
+Bajaj Finserv
+Nestle India
+ICRA
+Lakshmi Machine
+WABCO India
+Sanofi India
+GSK Cons Health
+Abbott India
+Oracle Fin
+Merck Ltd
+MRF
+3M India
+Bosch
+Abbott India
+ICRA
+Schaeffler India
+TTK Prestige
+Bharat Rasayan
+HEG Ltd
+Merck Ltd
+ICRA
+Schaeffler India
+TTK Prestige
+Bharat Rasayan
+Bosch
+Abbott India
+MRF
+Oracle Fin
+Bajaj Finserv
+ICRA
+Lakshmi Machine
+Merck Ltd
+Bajaj Finserv
+TTK Prestige
+Eicher Motors
+Honeywell Auto
+Sanofi India
+Tasty Bite Eat
+WABCO India
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -149,8 +207,66 @@ Fine Organic Industries Ltd. 0.29
 Vinati Organics 1.03
 Chola Inv Fin 1.47
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
-	at Solution.main(Solution.java:25)
+Larsen & Toubro
+Vinati Organics
+APL Apollo Tube
+Fine Organic Industries Ltd.
+Chola Inv Fin
+Nalwa Sons Invst
+Jubilant Food
+Endurance Technologies Ltd.
+NIIT Tech
+Ceat
+Larsen & Toubro
+Jubilant Food
+NIIT Tech
+Vinati Organics
+Chola Inv Fin
+Nalwa Sons Invst
+Ceat
+Endurance Technologies Ltd.
+Fine Organic Industries Ltd.
+APL Apollo Tube
+Chola Inv Fin
+Jubilant Food
+Vinati Organics
+Fine Organic Industries Ltd.
+Larsen & Toubro
+Nalwa Sons Invst
+APL Apollo Tube
+NIIT Tech
+Ceat
+Endurance Technologies Ltd.
+Chola Inv Fin
+Fine Organic Industries Ltd.
+APL Apollo Tube
+Ceat
+Vinati Organics
+Larsen & Toubro
+Endurance Technologies Ltd.
+Nalwa Sons Invst
+Jubilant Food
+NIIT Tech
+Larsen & Toubro
+APL Apollo Tube
+Jubilant Food
+Ceat
+NIIT Tech
+Nalwa Sons Invst
+Fine Organic Industries Ltd.
+Chola Inv Fin
+Vinati Organics
+Endurance Technologies Ltd.
+Larsen & Toubro
+Jubilant Food
+Endurance Technologies Ltd.
+Nalwa Sons Invst
+APL Apollo Tube
+Ceat
+NIIT Tech
+Fine Organic Industries Ltd.
+Vinati Organics
+Chola Inv Fin
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -231,8 +347,66 @@ WABCO India 0.33
 1
 3
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
-	at Solution.main(Solution.java:25)
+Merck Ltd
+ICRA
+Schaeffler India
+TTK Prestige
+Bharat Rasayan
+Bosch
+Abbott India
+MRF
+Oracle Fin
+Bajaj Finserv
+Merck Ltd
+Bajaj Finserv
+ICRA
+Schaeffler India
+Nestle India
+Honeywell Auto
+TTK Prestige
+WABCO India
+Eicher Motors
+GSK Cons Health
+Tasty Bite Eat
+Bajaj Finserv
+Nestle India
+ICRA
+Lakshmi Machine
+WABCO India
+Sanofi India
+GSK Cons Health
+Abbott India
+Oracle Fin
+Merck Ltd
+MRF
+3M India
+Bosch
+Abbott India
+ICRA
+Schaeffler India
+TTK Prestige
+Bharat Rasayan
+HEG Ltd
+Merck Ltd
+ICRA
+Schaeffler India
+TTK Prestige
+Bharat Rasayan
+Bosch
+Abbott India
+MRF
+Oracle Fin
+Bajaj Finserv
+ICRA
+Lakshmi Machine
+Merck Ltd
+Bajaj Finserv
+TTK Prestige
+Eicher Motors
+Honeywell Auto
+Sanofi India
+Tasty Bite Eat
+WABCO India
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -313,8 +487,66 @@ Chola Inv Fin 1.47
 4
 0
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
-	at Solution.main(Solution.java:25)
+Larsen & Toubro
+Vinati Organics
+APL Apollo Tube
+Fine Organic Industries Ltd.
+Chola Inv Fin
+Nalwa Sons Invst
+Jubilant Food
+Endurance Technologies Ltd.
+NIIT Tech
+Ceat
+Larsen & Toubro
+Jubilant Food
+NIIT Tech
+Vinati Organics
+Chola Inv Fin
+Nalwa Sons Invst
+Ceat
+Endurance Technologies Ltd.
+Fine Organic Industries Ltd.
+APL Apollo Tube
+Chola Inv Fin
+Jubilant Food
+Vinati Organics
+Fine Organic Industries Ltd.
+Larsen & Toubro
+Nalwa Sons Invst
+APL Apollo Tube
+NIIT Tech
+Ceat
+Endurance Technologies Ltd.
+Chola Inv Fin
+Fine Organic Industries Ltd.
+APL Apollo Tube
+Ceat
+Vinati Organics
+Larsen & Toubro
+Endurance Technologies Ltd.
+Nalwa Sons Invst
+Jubilant Food
+NIIT Tech
+Larsen & Toubro
+APL Apollo Tube
+Jubilant Food
+Ceat
+NIIT Tech
+Nalwa Sons Invst
+Fine Organic Industries Ltd.
+Chola Inv Fin
+Vinati Organics
+Endurance Technologies Ltd.
+Larsen & Toubro
+Jubilant Food
+Endurance Technologies Ltd.
+Nalwa Sons Invst
+APL Apollo Tube
+Ceat
+NIIT Tech
+Fine Organic Industries Ltd.
+Vinati Organics
+Chola Inv Fin
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -410,6 +642,64 @@ Schaeffler India
 TTK Prestige
 Tasty Bite Eat
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
-	at Solution.main(Solution.java:25)
+Merck Ltd
+Schaeffler India
+ICRA
+TTK Prestige
+Bharat Rasayan
+Bosch
+MRF
+Abbott India
+Oracle Fin
+Bajaj Finserv
+Bajaj Finserv
+Schaeffler India
+Sanofi India
+ICRA
+Nestle India
+Merck Ltd
+Honeywell Auto
+Abbott India
+Eicher Motors
+TTK Prestige
+Tasty Bite Eat
+Nestle India
+ICRA
+Lakshmi Machine
+Bosch
+Bajaj Finserv
+Schaeffler India
+Bharat Rasayan
+HEG Ltd
+Oracle Fin
+Merck Ltd
+MRF
+3M India
+Bosch
+Abbott India
+ICRA
+Schaeffler India
+TTK Prestige
+Bharat Rasayan
+HEG Ltd
+Merck Ltd
+ICRA
+Schaeffler India
+TTK Prestige
+Bharat Rasayan
+Bosch
+Abbott India
+MRF
+Oracle Fin
+Bajaj Finserv
+ICRA
+Lakshmi Machine
+Merck Ltd
+Bajaj Finserv
+TTK Prestige
+Eicher Motors
+Honeywell Auto
+Sanofi India
+Tasty Bite Eat
+WABCO India
 ----------------------------------------

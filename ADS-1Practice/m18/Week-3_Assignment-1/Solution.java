@@ -17,6 +17,7 @@ final class Solution {
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
+        sc.nextLine();
         for (int j = 0; j < 6; j++){
             MinPQ<Stocks> minpq = new MinPQ<Stocks>();
             MaxPQ<Stocks> maxpq = new MaxPQ<Stocks>();
