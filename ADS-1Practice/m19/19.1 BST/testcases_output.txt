@@ -1,4 +1,4 @@
-########## Testcase 0: Failed ##########
+########## Testcase 0: Passed ##########
 Expected Output: 
 1
 Python, eric, 5000.0
@@ -8,13 +8,15 @@ Hello, Ajay, 200.0
 Algorithms, Bob Sedgewick, 6000.0
 Python, eric, 5000.0
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at Book.compareTo(Solution.java:64)
-	at BinarySearchTree.put(Solution.java:193)
-	at BinarySearchTree.put(Solution.java:178)
-	at Solution.main(Solution.java:418)
+1
+Python, eric, 5000.0
+2
+Algorithms, Bob Sedgewick, 6000.0
+Hello, Ajay, 200.0
+Algorithms, Bob Sedgewick, 6000.0
+Python, eric, 5000.0
 ----------------------------------------
-########## Testcase 1: Failed ##########
+########## Testcase 1: Passed ##########
 Expected Output: 
 Harry, JK, 600.0
 6
@@ -27,13 +29,18 @@ Street, Kiran, 800.0
 IT, Viswas, 400.0
 2
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at Book.compareTo(Solution.java:64)
-	at BinarySearchTree.put(Solution.java:193)
-	at BinarySearchTree.put(Solution.java:178)
-	at Solution.main(Solution.java:418)
+Harry, JK, 600.0
+6
+Street, Kiran, 800.0
+Street, Kiran, 800.0
+5
+Harry, JK, 600.0
+7
+Street, Kiran, 800.0
+IT, Viswas, 400.0
+2
 ----------------------------------------
-########## Testcase 2: Failed ##########
+########## Testcase 2: Passed ##########
 Expected Output: 
 Harry, JK, 600.0
 Harry, JK, 600.0
@@ -45,10 +52,13 @@ Harry, JK, 600.0
 Street, Kiran, 800.0
 7
 Your Output: 
+Harry, JK, 600.0
+Harry, JK, 600.0
+Street, Kiran, 800.0
 null
-Exception in thread "main" java.lang.NullPointerException
-	at Book.compareTo(Solution.java:64)
-	at BinarySearchTree.put(Solution.java:193)
-	at BinarySearchTree.put(Solution.java:178)
-	at Solution.main(Solution.java:418)
+IT, Viswas, 400.0
+Street, Kiran, 800.0
+Harry, JK, 600.0
+Street, Kiran, 800.0
+7
 ----------------------------------------

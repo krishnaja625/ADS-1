@@ -24,9 +24,9 @@ class Book implements Comparable {
      */
     Book(final String name1,
                 final String author1, final float price1) {
-        this.name = name;
-        this.author = author;
-        this.price = price;
+        this.name = name1;
+        this.author = author1;
+        this.price = price1;
     }
     /**
      * Gets the name.
@@ -112,8 +112,8 @@ class BinarySearchTree {
          * @param s int size
          */
         private Node(final Book key1, final int val1, final int s) {
-            this.key = key;
-            this.val = val;
+            this.key = key1;
+            this.val = val1;
             this.size = s;
             left = null;
             right = null;
