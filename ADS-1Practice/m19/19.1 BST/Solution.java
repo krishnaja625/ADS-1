@@ -18,12 +18,12 @@ class Book implements Comparable {
     /**
      * Constructs the object.
      *
-     * @param      name    The name
-     * @param      author  The author
-     * @param      price   The price
+     * @param      name1    The name
+     * @param      author1  The author
+     * @param      price1   The price
      */
-    Book(final String name,
-                final String author, final float price) {
+    Book(final String name1,
+                final String author1, final float price1) {
         this.name = name;
         this.author = author;
         this.price = price;
