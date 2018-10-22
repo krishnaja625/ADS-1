@@ -107,11 +107,11 @@ class BinarySearchTree {
         /**
          * Constructs the object.
          *
-         * @param      key   The key
-         * @param      val  The value
+         * @param      key1   The key
+         * @param      val1  The value
          * @param s int size
          */
-        private Node(final Book key, final int val, final int s) {
+        private Node(final Book key1, final int val1, final int s) {
             this.key = key;
             this.val = val;
             this.size = s;

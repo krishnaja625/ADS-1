@@ -45,7 +45,7 @@ Harry, JK, 600.0
 Street, Kiran, 800.0
 7
 Your Output: 
-null, null, 0.0
+null
 Exception in thread "main" java.lang.NullPointerException
 	at Book.compareTo(Solution.java:64)
 	at BinarySearchTree.put(Solution.java:193)
