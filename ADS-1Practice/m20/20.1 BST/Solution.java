@@ -209,14 +209,19 @@ class BinarySearchTree {
     public void deleteMin() {
         root = deleteMin(root);
     }
-
-    private Node deleteMin(Node x) {
+/**
+ * funtion to recursively delete the minimum element.
+ *
+ * @param      x     a node to be deleted.
+ *
+ * @return     return type is node
+ */
+    private Node deleteMin(final Node x) {
         if (x.left == null) return x.right;
         x.left = deleteMin(x.left);
         x.size = size(x.left) + size(x.right) + 1;
         return x;
     }
-
     /**
      * Removes the largest key and associated value from the symbol table.
      *
@@ -225,8 +230,14 @@ class BinarySearchTree {
         /*if (isEmpty()) throw new NoSuchElementException("Symbol table underflow");*/
         root = deleteMax(root);
     }
-
-    private Node deleteMax(Node x) {
+/**
+ * funtion to recursively delete the maximum element.
+ *
+ * @param      x     a node to be deleted.
+ *
+ * @return     return type is node
+ */
+    private Node deleteMax(final Node x) {
         if (x.right == null) return x.left;
         x.right = deleteMax(x.right);
         x.size = size(x.left) + size(x.right) + 1;
@@ -239,11 +250,11 @@ class BinarySearchTree {
      *
      * @param  key the key
      */
-    public void delete(Book key) {
+    public void delete(final Book key) {
         root = delete(root, key);
     }
 
-    private Node delete(Node x, Book key) {
+    private Node delete(Node x, final Book key) {
         if (x == null) return null;
 
         int cmp = key.compareTo(x.key);
@@ -516,7 +527,6 @@ public final class Solution {
                     tokens[2], Float.parseFloat(tokens[2 + 1]));
                 bstobj.delete(bd);
                 break;
-
             default:
                 break;
             }
