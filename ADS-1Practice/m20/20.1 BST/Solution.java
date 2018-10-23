@@ -505,6 +505,18 @@ public final class Solution {
                     tokens[2], Float.parseFloat(tokens[2 + 1]));
                 System.out.println(bstobj.ceiling(bd));
                 break;
+            case "deleteMin":
+                bstobj.deleteMin();
+                break;
+            case "deleteMax":
+                bstobj.deleteMax();
+                break;
+            case "delete":
+                bd = new Book(tokens[1],
+                    tokens[2], Float.parseFloat(tokens[2 + 1]));
+                bstobj.delete(bd);
+                break;
+
             default:
                 break;
             }
