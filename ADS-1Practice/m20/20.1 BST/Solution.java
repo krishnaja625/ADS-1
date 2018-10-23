@@ -238,7 +238,9 @@ class BinarySearchTree {
  * @return     return type is node
  */
     private Node deleteMax(final Node x) {
-        if (x.right == null) return x.left;
+        if (x.right == null) {
+            return x.left;
+        }
         x.right = deleteMax(x.right);
         x.size = size(x.left) + size(x.right) + 1;
         return x;
@@ -255,22 +257,31 @@ class BinarySearchTree {
     }
 
     private Node delete(Node x, final Book key) {
-        if (x == null) return null;
-
+        if (x == null) {
+            return null;
+        }
         int cmp = key.compareTo(x.key);
-        if      (cmp < 0) x.left  = delete(x.left,  key);
-        else if (cmp > 0) x.right = delete(x.right, key);
-        else { 
-            if (x.right == null) return x.left;
-            if (x.left  == null) return x.right;
+        if      (cmp < 0) {
+            x.left  = delete(x.left,  key);
+        }
+        else if (cmp > 0) {
+            x.right = delete(x.right, key);
+        }
+        else {
+            if (x.right == null) {
+                return x.left;
+            }
+            if (x.left  == null) {
+                return x.right;
+            }
             Node t = x;
             x = min(t.right);
             x.right = deleteMin(t.right);
             x.left = t.left;
-        } 
+        }
         x.size = size(x.left) + size(x.right) + 1;
         return x;
-    } 
+    }
     /**
      * min element.
      * time complexity is O(1)
