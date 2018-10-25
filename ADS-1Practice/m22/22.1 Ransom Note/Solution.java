@@ -171,13 +171,12 @@ final class Solution {
      * Complexity is N.
      *
      * @param      st     { Hash table object }
-     * @param      n      { Length of the string }
      * @param      notes  The notes
      *
      * @return     { Yes or No based on the strings. }
      */
-    public static String check(final SeparateChainingHashST st
-        , final String[] notes) {
+    public static String check(final SeparateChainingHashST st,
+     final String[] notes) {
         for (int i = 0; i < notes.length; i++) {
             Integer p = st.get(notes[i]);
             if (p == null || p == 0) {
