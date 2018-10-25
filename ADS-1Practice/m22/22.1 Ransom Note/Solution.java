@@ -50,7 +50,7 @@ class SeparateChainingHashST {
      * @return     { Generated hash value }
      */
     private int hash(final String key) {
-        int h = 0x7fffffff;
+        final int h = 0x7fffffff;
         return (key.hashCode() & h) % m;
     }
 
@@ -68,8 +68,7 @@ class SeparateChainingHashST {
      * Returns true if this symbol table is empty.
      * Complexity is 1.
      *
-     * @return {@code true} if this symbol table is empty;
-     *         {@code false} otherwise
+     * @return 
      */
     public boolean isEmpty() {
         return size() == 0;
