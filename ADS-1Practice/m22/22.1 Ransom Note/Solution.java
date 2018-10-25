@@ -219,7 +219,6 @@ final class Solution {
         int m = sc.nextInt();
         int n = sc.nextInt();
         sc.nextLine();
-        while (sc.hasNextLine()) {
             String[] magzine = sc.nextLine().split(" ");
             st = new SeparateChainingHashST(magzine.length);
             for (int i = 0; i < m; i++) {
@@ -232,7 +231,7 @@ final class Solution {
             }
             String[] str = sc.nextLine().split(" ");
             System.out.println(check(st, n, str));
-        }
+        
     }
 }
 
