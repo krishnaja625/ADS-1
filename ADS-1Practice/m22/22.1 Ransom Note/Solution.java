@@ -41,24 +41,6 @@ class SeparateChainingHashST {
             st[i] = new SequentialSearchST<String, Integer>();
         }
     }
-
-    // resize the hash table to have the given number of chains,
-    // // rehashing all of the keys
-    // private void resize(int chains) {
-    //     SeparateChainingHashST<String, Integer>[] temp
-    //     = (SeparateChainingHashST<String, Integer>[]) new SeparateChainingHashST(chains);
-    //     for (int i = 0; i < m; i++) {
-    //         for (String key : st[i].keys()) {
-    //             temp.put(key, st[i].get(key));
-    //         }
-    //     }
-    //     this.m  = temp.m;
-    //     this.n  = temp.n;
-    //     this.st = temp.st;
-    // }
-
-    // hash value between 0 and m-1
-
     /**
      * Function to generate hash value to given key.
      * Complexity is 1.
@@ -231,7 +213,6 @@ final class Solution {
             }
             String[] str = sc.nextLine().split(" ");
             System.out.println(check(st, n, str));
-        
     }
 }
 
