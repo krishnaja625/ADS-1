@@ -15,11 +15,11 @@ class SeparateChainingHashST {
      */
     private int n;
     /**
-     * // hash table size.
+     * hash table size.
      */
     private int m;
     /**
-     * // array of linked-list symbol tables.
+     *  array of linked-list symbol tables.
      */
     private SequentialSearchST<String, Integer>[] st;
     /**
@@ -28,7 +28,6 @@ class SeparateChainingHashST {
     SeparateChainingHashST() {
         this(INIT_CAPACITY);
     }
-
     /**
      * Constructs the object.
      *
@@ -46,7 +45,6 @@ class SeparateChainingHashST {
      * Complexity is 1.
      *
      * @param      key   The key
-     *
      * @return     { Generated hash value }
      */
     private int hash(final String key) {
@@ -178,9 +176,9 @@ final class Solution {
      *
      * @return     { Yes or No based on the strings. }
      */
-    public static String check(final SeparateChainingHashST st,
-        final int n, final String[] notes) {
-        for (int i = 0; i < n; i++) {
+    public static String check(final SeparateChainingHashST st
+        , final String[] notes) {
+        for (int i = 0; i < notes.length; i++) {
             Integer p = st.get(notes[i]);
             if (p == null || p == 0) {
                 return "No";
@@ -212,8 +210,6 @@ final class Solution {
                 }
             }
             String[] str = sc.nextLine().split(" ");
-            System.out.println(check(st, n, str));
+            System.out.println(check(st, str));
     }
 }
-
-

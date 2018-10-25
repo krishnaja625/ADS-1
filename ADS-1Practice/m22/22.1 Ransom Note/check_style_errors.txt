@@ -1,2 +1,6 @@
 Starting audit...
+[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m22\22.1 Ransom Note\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m22\22.1 Ransom Note\Solution.java:174:8: Unused @param tag for 'n'. [JavadocMethod]
+[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m22\22.1 Ransom Note\Solution.java:180:8: ',' is preceded with whitespace. [NoWhitespaceBefore]
 Audit done.
+Checkstyle ends with 3 errors.
