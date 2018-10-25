@@ -68,7 +68,8 @@ class SeparateChainingHashST {
      * Returns true if this symbol table is empty.
      * Complexity is 1.
      *
-     * @return 
+     * @return {@code true} if this symbol table is empty;
+     *         {@code false} otherwise
      */
     public boolean isEmpty() {
         return size() == 0;
