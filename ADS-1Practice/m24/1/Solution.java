@@ -34,14 +34,14 @@ final class Solution {
             String[] token = sc.nextLine().split(" ");
                	String student = lp.get(token[1]);
 				String[] std = student.split(",");
-            	String st = lp.get(token[0]);
+            	// String st = lp.get(token[0]);
             	switch (token[2]) {
                case "1":
                    System.out.println(std[0]);
 
                    break;
                case "2":
-                   System.out.println(std[1]);
+                   System.out.println(Double.parseDouble(std[1]));
 
                    break;
                default:
