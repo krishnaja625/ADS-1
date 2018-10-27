@@ -35,11 +35,18 @@ final class Solution {
                	String student = lp.get(token[1]);
 				String[] std = student.split(",");
             	String st = lp.get(token[0]);
-            	if (Integer.parseInt(token[2]) == 1) {
-            	    System.out.println(std[0]);
-            	} else {
-            		System.out.println(std[1]);
-            	}
+            	switch (token[2]) {
+               case "1":
+                   System.out.println(std[0]);
+
+                   break;
+               case "2":
+                   System.out.println(std[1]);
+
+                   break;
+               default:
+                   break;
+               }
             } catch (Exception e) {
             	System.out.println("String doesn't exists...");
             }
