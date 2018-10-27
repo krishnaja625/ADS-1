@@ -34,15 +34,12 @@ final class Solution {
             String[] token = sc.nextLine().split(" ");
                	String student = lp.get(token[1]);
 				String[] std = student.split(",");
-            
-            if (lp.contains(token[1])) {
             	String st = lp.get(token[0]);
             	if (Integer.parseInt(token[2]) == 1) {
             	    System.out.println(std[0]);
             	} else {
             		System.out.println(std[1]);
             	}
-            } 
             } catch (Exception e) {
             	System.out.println("String doesn't exists...");
             }
