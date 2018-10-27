@@ -1,0 +1,5 @@
+Starting audit...
+[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m24\2\Student.java:5:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] C:\Users\Zone\Desktop\ADS-1\ADS-1Practice\m24\2\Student.java:6: Line has trailing spaces. [RegexpSingleline]
+Audit done.
+Checkstyle ends with 2 errors.
