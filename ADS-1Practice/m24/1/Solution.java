@@ -17,7 +17,8 @@ final class Solution {
      */
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		LinearProbingHashST<String, String> lp = new LinearProbingHashST();
+		LinearProbingHashST<String, String> lp
+           = new LinearProbingHashST<String, String>();
         int n = Integer.parseInt(sc.nextLine());
         for(int i = 0; i < n; i++) {
             String[] tokens = sc.nextLine().split(" ");
@@ -29,6 +30,7 @@ final class Solution {
             }
         int m = Integer.parseInt(sc.nextLine());
         for(int i = 0; i < m; i++) {
+        	try {
             String[] token = sc.nextLine().split(" ");
                	String student = lp.get(token[1]);
 				String[] std = student.split(",");
@@ -40,9 +42,10 @@ final class Solution {
             	} else {
             		System.out.println(std[1]);
             	}
-            } else {
+            } 
+            } catch (Exception e) {
             	System.out.println("String doesn't exists...");
             }
-            }
 	}
+}
 }
