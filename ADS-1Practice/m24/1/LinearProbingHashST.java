@@ -75,9 +75,8 @@ public class LinearProbingHashST<Key, Value> {
      * O(N)
      */
     private int hash(final Key key) {
-        final int eleven = 11;
         final int code = 0x7fffffff;
-        return eleven * (key.hashCode() & code) % m;
+        return (key.hashCode() & code) % m;
     }
     /**
      * Inserts the key value pair to the symbol table.
