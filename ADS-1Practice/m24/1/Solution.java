@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 /**
  * Solution class.
  */
@@ -21,11 +21,13 @@ final class Solution {
            = new LinearProbingHashST<String, String>();
         int n = Integer.parseInt(sc.nextLine());
         for(int i = 0; i < n; i++) {
-            String[] tokens = sc.nextLine().split(" ");
+            String[] tokens = sc.nextLine().split(",");
             /*String value = new String(tokens[0],
             tokens[1], Double.parseDouble(tokens[2]));*/
             String key = tokens[0];
+            System.out.println(Arrays.toString(tokens));
             String value = tokens[1] + "," + tokens[2];
+            System.out.println(value);
             lp.put(key, value);
             }
         int m = Integer.parseInt(sc.nextLine());
