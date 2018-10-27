@@ -17,30 +17,32 @@ final class Solution {
      */
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		LinearProbingHashST<String, Student> lp = new LinearProbingHashST();
+		LinearProbingHashST<String, String> lp = new LinearProbingHashST();
         int n = Integer.parseInt(sc.nextLine());
         for(int i = 0; i < n; i++) {
             String[] tokens = sc.nextLine().split(" ");
-            Student key = new Student(tokens[0],
-            tokens[1], Double.parseDouble(tokens[2]));
-            String value = tokens[0];
-            lp.put(value, key);
+            /*String value = new String(tokens[0],
+            tokens[1], Double.parseDouble(tokens[2]));*/
+            String key = tokens[0];
+            String value = tokens[1] + "," + tokens[2];
+            lp.put(key, value);
             }
         int m = Integer.parseInt(sc.nextLine());
         for(int i = 0; i < m; i++) {
             String[] token = sc.nextLine().split(" ");
+               	String student = lp.get(token[1]);
+				String[] std = student.split(",");
             
-            if (lp.contains(token[0])) {
-            	Student st = lp.get(token[0]);
+            if (lp.contains(token[1])) {
+            	String st = lp.get(token[0]);
             	if (Integer.parseInt(token[2]) == 1) {
-            	    System.out.println(st.getName());
+            	    System.out.println(std[0]);
             	} else {
-            		System.out.println(st.gettotalmarks());
+            		System.out.println(std[1]);
             	}
             } else {
-            	System.out.println("Student doesn't exists...");
+            	System.out.println("String doesn't exists...");
             }
             }
-         
 	}
 }
