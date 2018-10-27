@@ -50,7 +50,7 @@ final class Solution {
                    break;
                }
             } catch (Exception e) {
-            	System.out.println("String doesn't exists...");
+            	System.out.println("Student doesn't exists...");
             }
 	}
 }
